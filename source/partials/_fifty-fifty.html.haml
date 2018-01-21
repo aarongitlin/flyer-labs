@@ -1,0 +1,16 @@
+
+.two-columns
+  .blocks-wrapper
+    .blocks-list
+      .basic-info
+        - data.event_1.basic_info do |event|
+          .basic-info__title= event.title
+          .basic-info__short-description= event.short_description
+          .basic-info__date= event.date
+          .basic-info__time= event.time
+          .basic-info__address= event.address
+
+          .rsvp-button RSVP
+
+  .media-wrapper
+    .primary-media{style: "background-image: url('#{data.event_1.media_image.url}')" }

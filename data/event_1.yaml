@@ -1,0 +1,13 @@
+page_description: "Event Details"
+
+basic_info:
+  title: My Really Great Event Title
+  short_description: "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ambitioni dedisse scripsisse iudicaretur."
+  time: "4:00PM"
+  date: Thursday Februay 14, 2018
+  address:
+    The Red Parlor
+    2626 Edford Road Minneapolis MN
+
+media_image:
+  url: "images/skull-birthday.gif"
