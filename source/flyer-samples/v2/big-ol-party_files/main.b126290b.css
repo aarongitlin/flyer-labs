@@ -626,23 +626,21 @@
     margin: 2rem;
 }
 .fifty-fifty__two-columns{
-    display:-ms-flexbox;
-    display:flex;
-    height:100%;
-    width:100%
+    width:100%;
 }
 .fifty-fifty__media-column{
-    display:-ms-flexbox;
-    display:flex;
-    -ms-flex:1 1 0%;
-    flex:1 1 0%;
     overflow:hidden;
+    display: -webkit-box;
     background-color: #f8d6cd;
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    width: 50%;
+    height: 100%;
 }
 .fifty-fifty__blocks-column{
-    -ms-flex:1 1 0%;
-    flex:1 1 0%;
-    overflow-y:auto
+    overflow-y:auto;
+    width: 50%;
 }
 .fifty-fifty__one-column{
     overflow-y:scroll;
