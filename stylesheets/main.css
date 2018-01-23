@@ -727,7 +727,8 @@ body {
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
   margin: 2rem auto 0 auto;
-  max-width: 1280px; }
+  max-width: 1280px;
+  min-width: 1040px; }
 
 .two-columns {
   height: 100%;
