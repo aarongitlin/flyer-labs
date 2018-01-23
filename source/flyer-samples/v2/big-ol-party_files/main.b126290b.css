@@ -618,15 +618,17 @@
     }
 }
 .primary-media{
-    background-position:50%;
+    background-position-x:50%;
+    background-position-y:35%;
     background-size:contain;
     -ms-flex:1 1 0%;
     flex:1 1 0%;
     background-repeat: no-repeat;
-    margin: 2rem;
+    border: 2rem solid #f8d6cd;
 }
 .fifty-fifty__two-columns{
     width:100%;
+    background-color: #f8d6cd;
 }
 .fifty-fifty__media-column{
     overflow:hidden;
