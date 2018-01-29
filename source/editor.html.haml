@@ -8,5 +8,7 @@ layout: editor
 .main-page
   = partial 'partials/editor-left-drawer'
 
-  .browser-chrome
-    = partial 'partials/fifty-fifty'
+  .flyer-preview
+    .flyer-preview__browser-chrome
+    .flyer-preview__content
+      %iframe{src:"/flyer_go.html"}
