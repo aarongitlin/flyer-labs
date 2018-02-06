@@ -1,0 +1,16 @@
+{
+   "guestlist":{
+      "settings":{
+         "list_privacy":"public"
+      },
+      "guests":[
+        {
+            "id":"2fb9cecd-73d5-4ffa-8272-7755e8edf256",
+            "additional_guests":0,
+            "first_name":"Leonor",
+            "last_name":"de Escoriaza",
+            "status":"attending"
+          }
+      ]
+   }
+}
