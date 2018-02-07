@@ -730,13 +730,14 @@ body {
           flex: 1 1 auto;
   margin: 2rem 2rem 6rem 2rem;
   -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12); }
+          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
+  min-height: 480px;
+  max-height: 700px; }
   .flyer-preview__browser-chrome {
     height: 2rem;
     background-color: #666; }
   .flyer-preview__content {
     height: calc(100% - 2rem);
-    min-height: 480px;
     min-width: 1040px; }
     .flyer-preview__content iframe {
       border: none;
