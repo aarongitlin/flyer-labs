@@ -18,9 +18,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-// Main Action bar
+// future todo: load css conditionally
 @import "action-bar";
 
 @import "editor";
 
-@import "fifty-fifty";
+@import "fifty-fifty-structure";
+
+@import "vista";
