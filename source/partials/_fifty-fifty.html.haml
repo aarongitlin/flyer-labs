@@ -1,6 +1,6 @@
 
 - data.event_2.info do |info|
-  %div{class: "two-columns, #{info.style.type}"}
+  %div{class: "two-columns #{info.style.type}"}
     .media-wrapper
       - info.blocks.each do |block|
         - if block.type == "primary_media"

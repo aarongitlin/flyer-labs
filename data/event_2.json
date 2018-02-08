@@ -9,7 +9,7 @@
          {
             "type":"primary_media",
             "info":{
-               "image_url":"/images/thank-you-square.jpeg",
+               "image_url":"images/thank-you-square.jpeg",
                "type":"image"
             },
             "id":"cd12c858-eb1f-4cb3-beaf-6d508fc97bb1"
