@@ -698,7 +698,7 @@ body {
 .wrapper--editor {
   height: 100%;
   background-color: #eee;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
   overflow-x: scroll;
   overflow-y: hidden; }
@@ -746,9 +746,9 @@ body {
 
 .two-columns {
   width: 100%; }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1460px) {
     .two-columns {
-      max-width: 1380px;
+      max-width: 1440px;
       margin: auto;
       position: relative; } }
 
@@ -770,7 +770,7 @@ body {
       width: 50%;
       padding-left: 8.33%;
       padding-top: 8.33vh; } }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1460px) {
     .blocks-list {
       width: 50%;
       display: inline-block;
@@ -801,13 +801,13 @@ body {
       min-height: 0; } }
   @media screen and (min-width: 1080px) {
     .media-wrapper {
-      min-height: 540px; } }
+      min-height: 608px; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 12 / 7) {
     .media-wrapper {
       width: 50%;
       padding: 2rem;
       min-height: 0; } }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1460px) {
     .media-wrapper {
       width: 50%;
       height: 100vh;
@@ -816,7 +816,7 @@ body {
       position: sticky;
       top: 0;
       padding: 0;
-      min-height: 690px; } }
+      min-height: 730px; } }
 
 .primary-media {
   width: 100%;
@@ -837,9 +837,12 @@ body {
   @media screen and (min-width: 780px) and (max-aspect-ratio: 12 / 7) {
     .primary-media {
       background-position-y: 50%; } }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1460px) {
     .primary-media {
       background-position-y: 50%; } }
+
+.wrapper--go {
+  background-color: #f8d6cd; }
 
 .vista {
   background-color: #f8d6cd;
