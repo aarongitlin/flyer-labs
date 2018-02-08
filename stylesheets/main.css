@@ -840,3 +840,115 @@ body {
   @media screen and (min-width: 1400px) {
     .primary-media {
       background-position-y: 50%; } }
+
+.vista {
+  background-color: #f8d6cd;
+  color: #3d5f75; }
+  .vista .basic-info__title {
+    font-family: Golden Plains;
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+    font-size: 7rem;
+    margin-top: 1rem; }
+  .vista .basic-info__host {
+    font-family: FuturaLTPRo-book;
+    font-weight: 100;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 16.67%;
+    margin-top: 2rem; }
+  .vista .basic-info__short-description {
+    font-family: FuturaLTPRo-book;
+    font-weight: 100;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    line-height: 1.5rem;
+    margin-left: 16.67%;
+    margin-top: 2rem; }
+  .vista .basic-info__date {
+    font-family: FuturaLTPRo-book;
+    font-weight: 100;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 16.67%;
+    margin-top: 2rem; }
+  .vista .basic-info__time {
+    font-family: FuturaLTPRo-book;
+    font-weight: 100;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 16.67%;
+    margin-top: 0.25rem; }
+  .vista .basic-info__address {
+    font-family: FuturaLTPRo-book;
+    font-weight: 100;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 16.67%;
+    margin-top: 0.25rem; }
+  .vista .rsvp-button {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+    left: 1rem;
+    width: 80px;
+    height: 40px;
+    display: inline-block; }
+  .vista .text-block {
+    margin-top: 4rem; }
+    .vista .text-block__title {
+      font-family: Golden Plains;
+      font-size: 5rem;
+      line-height: 6rem;
+      margin-bottom: 2rem; }
+    .vista .text-block__text {
+      font-family: FuturaLTPRo-book;
+      font-weight: 100;
+      font-size: 1rem;
+      letter-spacing: .5px;
+      line-height: 1.5rem;
+      margin-top: 2rem; }
+  .vista .guestlist {
+    margin-top: 4rem; }
+    .vista .guestlist__title {
+      font-family: Golden Plains;
+      font-size: 5rem;
+      line-height: 6rem;
+      margin-bottom: 2rem; }
+    .vista .guestlist__guests {
+      font-family: FuturaLTPRo-book;
+      font-weight: 100;
+      font-size: 1rem;
+      letter-spacing: .5px;
+      line-height: 1.5rem; }
+      .vista .guestlist__guests li {
+        display: inline-block;
+        width: 50%; }
+  .vista .footer {
+    margin: 4rem auto 2rem auto;
+    max-width: 20rem; }
+    .vista .footer__logo {
+      width: 8rem;
+      display: block;
+      height: auto;
+      margin: auto; }
+    .vista .footer__list-items {
+      font-size: 0.875rem;
+      margin-top: 1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
