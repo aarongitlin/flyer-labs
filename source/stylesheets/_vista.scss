@@ -1,0 +1,118 @@
+$background-color: #f8d6cd;
+$font-color: #3d5f75;
+
+@mixin heading {
+  font-family: Golden Plains;
+  font-size: 5rem;
+  line-height: 6rem;
+  margin-bottom: 2rem;
+}
+
+@mixin page-heading {
+  @include heading;
+  font-size: 7rem;
+}
+@mixin subheading {
+  font-family: FuturaLTPRo-book;
+  font-weight: 100;
+  font-size: 0.875rem;
+  letter-spacing: 3px;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+@mixin text {
+  font-family: FuturaLTPRo-book;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  line-height: 1.5rem;
+}
+
+.vista {
+  background-color: $background-color;
+  color: $font-color;
+
+  .basic-info {
+    &__title {
+      @include page-heading;
+      margin-top: 1rem;
+    }
+    &__host {
+      @include subheading;
+      margin-left: 16.67%;
+      margin-top: 2rem;
+    }
+    &__short-description {
+      @include text;
+      margin-left: 16.67%;
+      margin-top: 2rem;
+    }
+    &__date {
+      @include subheading;
+      margin-left: 16.67%;
+      margin-top: 2rem;
+    }
+    &__time {
+      @include subheading;
+      margin-left: 16.67%;
+      margin-top: 0.25rem;
+    }
+    &__address {
+      @include subheading;
+      margin-left: 16.67%;
+      margin-top: 0.25rem;
+    }
+  }
+
+  .rsvp-button {
+    position: sticky;
+    top: 1rem;
+    left: 1rem;
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  .text-block {
+    margin-top: 4rem;
+    &__title {
+      @include heading;
+    }
+    &__text {
+      @include text;
+      margin-top: 2rem;
+    }
+  }
+
+  .guestlist {
+    margin-top: 4rem;
+    &__title {
+      @include heading;
+    }
+    &__guests {
+      @include text;
+      li {
+        display: inline-block;
+        width: 50%;
+      }
+    }
+  }
+  .footer {
+    margin: 4rem auto 2rem auto;
+    max-width: 20rem;
+    &__logo {
+      width: 8rem;
+      display: block;
+      height: auto;
+      margin: auto;
+    }
+    &__list-items {
+      font-size: 0.875rem;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
