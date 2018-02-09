@@ -1,6 +1,8 @@
-.wrapper--go
-  - data.event_2.info do |info|
-    %div{class: "two-columns #{info.style.type}"}
+- data.event_2.info do |info|
+  .wrapper--go{class: "#{info.style.type}"}
+    .header-toolbar
+      .header-toolbar__logo Paperless Post
+    .two-columns
       .media-wrapper
         - info.blocks.each do |block|
           - if block.type == "primary_media"
@@ -31,22 +33,7 @@
               - data.event_2_guests.guestlist.guests.each do |guest|
                 %li.guestlist__guests__guest= guest.first_name + " " + guest.last_name
 
-        -#.text-block
-          .text-block__title Big Event title
-          .text-block__description
-            Tu quoque, Brute, fili mi, nihil timor populi, nihil! Quae vero auctorem tractata ab fiducia dicuntur. Praeterea iter est quasdam res quas ex communi. Ullamco laboris nisi ut aliquid ex ea commodi consequat.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Unam incolunt Belgae, aliam Aquitani, tertiam. Non equidem invideo, miror magis posuere velit aliquet.
-            Ut enim ad minim veniam, quis nostrud exercitation. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Mercedem aut nummos unde unde extricat, amaras. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh.
-            Praeterea iter est quasdam res quas ex communi. Cum sociis natoque penatibus et magnis dis parturient. Mercedem aut nummos unde unde extricat, amaras. At nos hinc posthac, sitientis piros Afros. Curabitur blandit tempus ardua ridiculus sed magna.
-            Unam incolunt Belgae, aliam Aquitani, tertiam. Cum ceteris in veneratione tui montes, nascetur mus. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Donec sed odio operae, eu vulputate felis rhoncus.
-            Nec dubitamus multa iter quae et nos invenerat. Curabitur est gravida et libero vitae dictum. Idque Caesaris facere voluntate liceret: sese habere.
-            Contra legem facit qui id facit quod lex prohibet. Non equidem invideo, miror magis posuere velit aliquet. Hi omnes lingua, institutis, legibus inter se differunt. Nihil hic munitissimus habendi senatus locus, nihil horum? Cras mattis iudicium purus sit amet fermentum. Pellentesque habitant morbi tristique senectus et netus.
-            Quam diu etiam furor iste tuus nos eludet? Quid securi etiam tamquam eu fugiat nulla pariatur. Magna pars studiorum, prodita quaerimus.
-            Curabitur blandit tempus ardua ridiculus sed magna. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Inmensae subtilitatis, obscuris et malesuada fames. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Fictum,  deserunt mollit anim laborum astutumque!
-            Paullum deliquit, ponderibus modulisque suis ratio utitur. Magna pars studiorum, prodita quaerimus. Ab illo tempore, ab est sed immemorabili. Etiam habebis sem dicantur magna mollis euismod. Ambitioni dedisse scripsisse iudicaretur.
-            Praeterea iter est quasdam res quas ex communi. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Tityre, tu patulae recubans sub tegmine fagi  dolor.
-            Tu quoque, Brute, fili mi, nihil timor populi, nihil! Quisque placerat facilisis egestas cillum dolore. Phasellus laoreet lorem vel dolor tempus vehicula. Unam incolunt Belgae, aliam Aquitani, tertiam. Quo usque tandem abutere, Catilina, patientia nostra? Pellentesque habitant morbi tristique senectus et netus.
-            Ut enim ad minim veniam, quis nostrud exercitation. At nos hinc posthac, sitientis piros Afros. Non equidem invideo, miror magis posuere velit aliquet.
+
         .footer
           %svg.footer__logo{"enable-background" => "new 0 0 212 56", :height => "56", :viewbox => "0 0 212 56", :width => "212", :x => "0", :xmlns => "http://www.w3.org/2000/svg", :y => "0"}
             %path{:d => "M83.3 48.4c0 1.8-1.5 3.1-2.4 3.1h-5.6v4.3h-1.8V45.2h7.2C82 45.2 83.3 46.7 83.3 48.4zM81.5 48.4c0-0.6-0.6-1.4-1.2-1.4h-5.1v2.6l5.3 0C81 49.7 81.5 49 81.5 48.4zM101.6 50.2c0 3.8-3.1 5.8-6.1 5.8 -3.1 0-6.1-2-6.1-5.8 0-3.2 3.1-5.3 6.1-5.3C98.4 44.9 101.6 47 101.6 50.2zM99.7 50.2c0-1.8-2-3.3-4.2-3.3 -2.3 0-4.2 1.5-4.2 3.3 0 2.5 1.6 3.9 4.2 3.9C98.2 54.2 99.7 52.5 99.7 50.2zM118.3 52.3c0.1 1.6-1.4 3.7-4.9 3.7 -3.7 0-6.4-2.3-6.4-2.3l1.2-1.4c1.3 1.1 3.2 1.9 5 1.9 1.2 0 3.1-0.5 3.1-1.6 0-0.5-0.2-1-0.8-1.1l-5.2-0.8c-1.5-0.2-2.7-1.4-2.7-2.8 0-2.3 3-3.1 5.3-3.1 1.8 0.1 3.4 0.7 4.8 1.8l-1.3 1.3c-1.1-0.7-2.8-1.4-4.3-1.4 -1.1 0-2.5 0.6-2.5 1.3 -0.1 0.7 0.8 1.1 1.6 1.2l3.6 0.4C116.4 49.7 118.2 50.5 118.3 52.3zM134.8 46.9h-4.5v8.8h-1.8v-8.8h-4.5v-1.7h10.8V46.9z"}

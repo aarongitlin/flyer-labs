@@ -1,3 +1,19 @@
+.header-toolbar {
+  height: 4rem;
+  position: relative;
+  @media screen and (min-width: 780px) {
+    width: 100%;
+    position: fixed;
+    &__logo {
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-top: 1.2rem;
+      padding-left: 1rem;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+  }
+}
 
 .two-columns {
   width: 100%;
@@ -39,7 +55,7 @@
     width: 41.67%;
     overflow-y: auto;
     margin: 0;
-    padding: 2rem 1rem 0 1rem;
+    padding: 6rem 2rem 0 1rem;
   }
   // taller height small-desktop views
 
@@ -47,7 +63,7 @@
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 12/7) {
     width: 50%;
     padding-left: 8.33%;
-    padding-top: 8.33vh;
+    padding-top: 6rem;
   }
   // large desktops
   @media screen and (min-width: 1460px) {
@@ -56,7 +72,7 @@
     padding: 2rem 1rem 0 0.875rem;
 
     padding-left: 8.33%;
-    padding-top: 8.33vh;
+    padding-top: 6rem;
     padding-right: 2.75%;
   }
 }
@@ -75,9 +91,9 @@
   // shorter small desktop views
   @media screen and (min-width: 780px) {
     position: fixed;
-    top: 0;
+    top: 4rem;
     right: 0;
-    height: 100%;
+    height: calc(100vh - 4rem);
     width: 58.33%;
     display: -webkit-box;
     min-height: 488px;
@@ -105,7 +121,7 @@
     position: sticky;
     top: 0;
     padding: 0;
-    min-height: 730px; // 1460 in half
+    min-height: 608px; // 1460 divided by 12:5?
   }
   // large desktops with taller heights
 

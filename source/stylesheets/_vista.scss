@@ -1,5 +1,22 @@
-$background-color: #f8d6cd;
-$font-color: #3d5f75;
+///// Vista vibe experiment
+
+// Vibe base colors
+$vibe-base-color: #D77AB6;
+
+// Designer overrides
+$text-color: #AC417B;
+$rsvp-background: #DBF4EA;
+
+// Fixed colors
+$header-color-2: #fff;
+
+// Generated
+$background-color: saturate( lighten( $vibe-base-color, 20% ), 20% );
+$background-color-alt: lighten( $background-color, 5% );
+$header-color-1: desaturate( darken( $vibe-base-color, 5% ), 20% );
+$header-background: saturate( lighten( $vibe-base-color, 25% ), 20%);
+$rsvp-text: $text-color;
+
 
 @mixin heading {
   font-family: Golden Plains;
@@ -35,7 +52,18 @@ $font-color: #3d5f75;
 
 .vista {
   background-color: $background-color;
-  color: $font-color;
+  color: $text-color;
+
+  .header-toolbar {
+    background-color: $header-background;
+    &__logo {
+      color: $header-color-1;
+    }
+  }
+
+  .two-columns {
+    background-color: $background-color;
+  }
 
   .basic-info {
     &__title {
@@ -70,12 +98,24 @@ $font-color: #3d5f75;
   }
 
   .rsvp-button {
-    position: sticky;
+    margin-top: 1rem;
     top: 1rem;
     left: 1rem;
-    width: 80px;
-    height: 40px;
+    width: 150px;
+    height: 60px;
+    background-color: $rsvp-background;
+    color: $rsvp-text;
+    border-radius: 80px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.24);
     display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 1rem;
+    font-family: FuturaLTPRo-book;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .text-block {
@@ -110,6 +150,7 @@ $font-color: #3d5f75;
       display: block;
       height: auto;
       margin: auto;
+      fill: currentColor;
     }
     &__list-items {
       font-size: 0.875rem;
