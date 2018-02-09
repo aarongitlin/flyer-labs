@@ -10,6 +10,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
 .wrapper--go {
   height: 100%;
 }
@@ -25,23 +26,25 @@
   flex: 1 0 10rem;
   background-color: #666;
   align-self: stretch;
+  margin-left: 1.5rem;
 }
 
 .flyer-preview {
   background-color: #fff;
   width: 100%;
   flex: 1 1 auto;
-  margin: 2rem 2rem 6rem 2rem;
+  margin: 1.5rem 1.5rem 6rem 2rem;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
-  min-height: 480px;
-  max-height: 700px;
+  min-height: 540px;
+  max-height: 680px;
 
   &__browser-chrome {
-    height: 2rem;
+    height: 1.25rem;
     background-color: #666;
   }
+
   &__content {
-    height: calc(100% - 2rem);
+    height: calc(100% - 1.25rem);
     min-width: 1040px;
     iframe {
       border: none;
