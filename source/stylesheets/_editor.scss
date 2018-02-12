@@ -34,8 +34,9 @@
   flex: 1 1 auto;
   margin: 1.5rem 1.5rem 5rem 2rem;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
-  min-height: 490px;
   max-height: 750px;
+
+
 
   &__browser-chrome {
     height: 1.5rem;
@@ -43,6 +44,7 @@
   }
   &__content {
     height: calc(100% - 1.5rem);
+    min-height: 490px;
     min-width: 784px;
     iframe {
       border: none;
