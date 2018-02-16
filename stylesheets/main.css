@@ -786,10 +786,19 @@ body {
       width: 75%; } }
   @media screen and (min-width: 780px) {
     .blocks-list {
-      width: 41.67%;
+      width: 50%;
       overflow-y: auto;
       margin: 0;
-      padding: 6rem 2rem 0 1rem; } }
+      padding: 6rem 1.5rem 0 1.5rem; } }
+  @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
+    .blocks-list {
+      width: 41.67%; } }
+  @media screen and (min-width: 1080px) {
+    .blocks-list {
+      width: 50%; } }
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 9) {
+    .blocks-list {
+      width: 41.67%; } }
   @media screen and (min-width: 1460px) {
     .blocks-list {
       width: 50%;
@@ -804,27 +813,39 @@ body {
   top: 0; }
   @media screen and (min-width: 540px) {
     .media-wrapper {
-      width: 83.33%;
+      width: 100%;
+      padding: 4% 8% 0 8%;
       margin: auto; } }
   @media screen and (min-width: 780px) {
     .media-wrapper {
       position: fixed;
+      padding: 0;
       top: 4rem;
       right: 0;
       height: calc(100vh - 4rem);
-      width: 58.33%;
+      width: 50%;
       display: -webkit-box;
-      min-height: 488px; } }
+      min-height: 380px; } }
+  @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
+    .media-wrapper {
+      width: 58.33%;
+      padding: 0; } }
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 10) {
     .media-wrapper {
-      padding: 2rem;
-      min-height: 0; } }
+      padding: 1.5rem; } }
   @media screen and (min-width: 1080px) {
     .media-wrapper {
+      padding: 0;
+      width: 50%;
+      min-height: 540px; } }
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 9) {
+    .media-wrapper {
+      padding: 0;
+      width: 58.33%;
       min-height: 608px; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
     .media-wrapper {
-      padding: 2rem;
+      padding: 1.5rem;
       min-height: 0; } }
   @media screen and (min-width: 1460px) {
     .media-wrapper {
@@ -835,7 +856,7 @@ body {
       position: sticky;
       top: 4rem;
       padding: 0;
-      min-height: 608px; } }
+      min-height: 639px; } }
 
 .primary-media {
   width: 100%;
@@ -858,7 +879,8 @@ body {
       background-position-y: 50%; } }
   @media screen and (min-width: 1460px) {
     .primary-media {
-      background-position-y: 50%; } }
+      background-position-y: 50%;
+      background-position-x: 50%; } }
 
 .wrapper--go {
   background-color: #f6c1e3; }
