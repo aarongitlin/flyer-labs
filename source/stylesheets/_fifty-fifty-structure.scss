@@ -58,16 +58,23 @@
   // short height - small desktop and tablet landscape
   // text should still be considered mobile style here
   @media screen and (min-width: 780px) {
-    width: 41.67%;
+    width: 50%;
     overflow-y: auto;
     margin: 0;
-    padding: 6rem 2rem 0 1rem;
+    padding: 6rem 1.5rem 0 1.5rem;
   }
   // taller height small-desktop views
+  @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
+    width: 41.67%;
+  }
+  // short medium desktop view
+  @media screen and (min-width: 1080px) {
+    width: 50%;
+  }
 
   // taller height medium desktop view
-  @media screen and (min-width: 1080px) and (max-aspect-ratio: 24/15) {
-    //width: 50%;
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/9) {
+    width: 41.67%;
     //padding-left: 8.33%;
     //padding-top: 6rem;
   }
@@ -88,32 +95,47 @@
   position: relative;
   top: 0;
   @media screen and (min-width: 540px) {
-    width: 83.33%;
+    width: 100%;
+    padding: 4% 8% 0 8%;
     margin: auto;
   }
   // shorter small desktop views
   @media screen and (min-width: 780px) {
     position: fixed;
+    padding: 0;
     top: 4rem;
     right: 0;
     height: calc(100vh - 4rem);
-    width: 58.33%;
+    width: 50%;
     display: -webkit-box;
-    min-height: 488px;
+    min-height: 380px;
   }
   // taller small desktop views
+  @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
+    // padding: 2rem;
+    // min-height: 0;
+    width: 58.33%;
+    padding: 0;
+  }
+  // tallest short desktop view
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/10) {
-    padding: 2rem;
-    min-height: 0;
+    padding: 1.5rem;
   }
   // shorter medium desktop view
   @media screen and (min-width: 1080px) {
-    min-height: 608px; // This is from the max width at this breakpoint, 1460, at 5/12 columns, a kind of minimum
+    padding: 0;
+    width: 50%;
+    min-height: 540px; // This is from the max width at this breakpoint, 1460, at 5/12 columns, a kind of minimum
   }
   // taller medium desktop view
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/9) {
+    padding: 0;
+    width: 58.33%;
+    min-height: 608px;
+  }
+  //tallest medium desktop view
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/10) {
-    //width: 50%;
-    padding: 2rem;
+    padding: 1.5rem;
     min-height: 0;
   }
   // large desktops
@@ -124,7 +146,7 @@
     position: sticky;
     top: 4rem;
     padding: 0;
-    min-height: 608px; // 1460 divided by 12:5?
+    min-height: 639px; // 1460 divided by 16:7?
   }
   // large desktops with taller heights
 
@@ -156,5 +178,6 @@
   // large desktops
    @media screen and (min-width: 1460px) {
      background-position-y: 50%;
+     background-position-x: 50%;
    }
 }
