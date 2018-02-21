@@ -803,10 +803,7 @@ body {
     .blocks-list {
       width: 50%;
       display: inline-block;
-      padding: 2rem 1rem 0 0.875rem;
-      padding-left: 8.33%;
-      padding-top: 6rem;
-      padding-right: 2.75%; } }
+      padding: 6rem 2rem 0 4rem; } }
 
 .media-wrapper {
   position: relative;
@@ -869,7 +866,6 @@ body {
   @media screen and (min-width: 780px) {
     .primary-media {
       background-size: contain;
-      background-position-x: 100%;
       background-repeat: no-repeat;
       height: 100%;
       width: 100%;
@@ -882,12 +878,11 @@ body {
       background-position-y: 50%;
       background-position-x: 50%; } }
 
-.wrapper--go {
-  background-color: #f6c1e3; }
-
 .vista {
   background-color: #f6c1e3;
   color: #AC417B; }
+  .vista.wrapper--go {
+    background-color: #fae0f1; }
   .vista .header-toolbar {
     background-color: #f9d7ed; }
     .vista .header-toolbar__logo {
