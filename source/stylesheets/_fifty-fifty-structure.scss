@@ -1,3 +1,16 @@
+// The below works as follows
+// Mobile view, the media is full width. Single column content
+// Tablet portrait view (540px-769px), the media is 85% width with equal space around. Single column content
+// Small desktop view (780-1079px)
+//   Shorter than 12:7 is a 5col-7col content-media split, media is full width and height, min-height 480px
+//   12:7 and taller is same split, but media is 'floated'
+// Medium desktop view (1080-1399px)
+//   Shorter than 12:7 is same as above, but with a min-height of 540px
+//   12:7 and taller, it becomes a 50-50 split and media is 'floated'
+// Large desktop view (1400px+)
+//   layout is adjusted to a max-width of 1380, media has min-heigh of 690
+//   media is floated to the right of container, not browser at all heights
+
 .header-toolbar {
   height: 4rem;
   position: relative;
@@ -14,6 +27,12 @@
       letter-spacing: 4px;
     }
   }
+  @media screen and (min-width: 1460px) {
+    // in case we want to contain the header too
+    // width: 1440px;
+    // left: 50%;
+    // margin-left: -720px;
+  }
 }
 
 .wrapper--go { // to extend to full height of screen
@@ -28,22 +47,12 @@
     max-width: 1440px;
     margin: auto;
     position: relative;
+    //box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     // transform: translateZ(0); // this sets fixed child elements to fix to its parent, not window, apparently
     // unfortuantely the above also gets rid of fixed scroll behavior :/
   }
 }
-// The below works as follows
-// Mobile view, the media is full width. Single column content
-// Tablet portrait view (540px-769px), the media is 85% width with equal space around. Single column content
-// Small desktop view (780-1079px)
-//   Shorter than 12:7 is a 5col-7col content-media split, media is full width and height, min-height 480px
-//   12:7 and taller is same split, but media is 'floated'
-// Medium desktop view (1080-1399px)
-//   Shorter than 12:7 is same as above, but with a min-height of 540px
-//   12:7 and taller, it becomes a 50-50 split and media is 'floated'
-// Large desktop view (1400px+)
-//   layout is adjusted to a max-width of 1380, media has min-heigh of 690
-//   media is floated to the right of container, not browser at all heights
+
 
 
 .blocks-list { // just structural info here
@@ -82,11 +91,7 @@
   @media screen and (min-width: 1460px) {
     width: 50%;
     display: inline-block;
-    padding: 2rem 1rem 0 0.875rem;
-
-    padding-left: 8.33%;
-    padding-top: 6rem;
-    padding-right: 2.75%;
+    padding: 6rem 2rem 0 4rem;
   }
 }
 
@@ -165,7 +170,6 @@
   // shorter height small desktop
   @media screen and (min-width: 780px) {
     background-size: contain;
-    background-position-x: 100%;
     background-repeat:no-repeat;
     height: 100%;
     width: 100%;
