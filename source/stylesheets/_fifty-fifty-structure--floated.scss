@@ -135,7 +135,7 @@
     // padding: 2rem;
     // min-height: 0;
     width: 58.33%;
-    padding: 0;
+    padding: 1.5rem;
   }
   // tallest short desktop view
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/10) {
@@ -143,13 +143,13 @@
   }
   // shorter medium desktop view
   @media screen and (min-width: 1080px) {
-    padding: 0;
+    padding: 1.5rem;
     width: 50%;
     min-height: 540px; // This is from the max width at this breakpoint, 1460, at 5/12 columns, a kind of minimum
   }
   // taller medium desktop view
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/9) {
-    padding: 0;
+    padding: 1.5rem;
     width: 58.33%;
     min-height: 608px;
   }
@@ -177,7 +177,7 @@
   height: 0; // weird trick to make bg image behave as inline image
   padding-top: 100%;
   background-size: contain;
-  background-position-x: 50%;
+  background-position-x: right;
   background-position-y: top;
   background-repeat:no-repeat;
   // tablet-portrait
