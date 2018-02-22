@@ -69,6 +69,9 @@ $rsvp-text: $text-color;
     &__title {
       @include page-heading;
       margin-top: 1rem;
+      @media screen and (min-width: 780px) {
+        margin-top: 4rem;
+      }
     }
     &__host {
       @include subheading;
@@ -98,9 +101,6 @@ $rsvp-text: $text-color;
   }
 
   .rsvp-button {
-    margin-top: 1rem;
-    top: 1rem;
-    left: 1rem;
     width: 150px;
     height: 60px;
     background-color: $rsvp-background;
@@ -119,7 +119,7 @@ $rsvp-text: $text-color;
   }
 
   .text-block {
-    margin-top: 4rem;
+    margin-top: 2rem;
     &__title {
       @include heading;
     }
@@ -130,7 +130,7 @@ $rsvp-text: $text-color;
   }
 
   .guestlist {
-    margin-top: 4rem;
+    margin-top: 2rem;
     &__title {
       @include heading;
     }
@@ -143,8 +143,7 @@ $rsvp-text: $text-color;
     }
   }
   .footer {
-    margin: 4rem auto 2rem auto;
-    max-width: 20rem;
+    padding: 4rem auto 2rem auto;
     &__logo {
       width: 8rem;
       display: block;
