@@ -1019,3 +1019,6 @@ body {
               align-items: center;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
+
+.block:nth-child(even) {
+  background-color: #f9d7ed; }
