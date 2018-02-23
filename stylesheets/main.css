@@ -796,13 +796,17 @@ body {
       overflow-y: auto;
       margin: 0; }
       .blocks-list .block {
-        padding: 2rem 12.5% 12.5% 2rem; } }
+        padding: 2rem 2rem 1.5% 2rem; } }
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
     .blocks-list {
-      width: 41.67%; } }
+      width: 41.67%; }
+      .blocks-list .block {
+        padding: 2rem 12.5% 12.5% 2rem; } }
   @media screen and (min-width: 1080px) {
     .blocks-list {
-      width: 50%; } }
+      width: 50%; }
+      .blocks-list .block {
+        padding: 1.5rem 2rem 2rem 12.5%; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 9) {
     .blocks-list {
       width: 41.67%; } }
@@ -811,8 +815,12 @@ body {
       width: 50%;
       display: inline-block; }
       .blocks-list .block {
-        padding: 2rem 12.5% 12.5% 2rem;
-        margin: auto 2rem; } }
+        padding: 2rem 4% 1.5rem 12.5%; } }
+  @media screen and (min-width: 1460px) and (max-aspect-ratio: 16 / 8) {
+    .blocks-list {
+      width: 41.67%; }
+      .blocks-list .block {
+        padding: 2rem 8% 1.5rem 8%; } }
 
 .media-wrapper {
   position: relative;
@@ -831,7 +839,7 @@ body {
       height: calc(100vh - 4rem);
       width: 50%;
       display: -webkit-box;
-      min-height: 380px; } }
+      min-height: 450px; } }
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
     .media-wrapper {
       width: 58.33%;
@@ -841,14 +849,13 @@ body {
       padding: 1.5rem; } }
   @media screen and (min-width: 1080px) {
     .media-wrapper {
-      padding: 0;
+      padding: 1.5rem;
       width: 50%;
       min-height: 540px; } }
-  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 9) {
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
     .media-wrapper {
       padding: 0;
-      width: 58.33%;
-      min-height: 608px; } }
+      width: 58.33%; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
     .media-wrapper {
       padding: 1.5rem;
@@ -862,7 +869,10 @@ body {
       position: sticky;
       top: 4rem;
       padding: 1.5rem;
-      min-height: 639px; } }
+      min-height: 672px; } }
+  @media screen and (min-width: 1460px) and (max-aspect-ratio: 16 / 8) {
+    .media-wrapper {
+      width: 58.33%; } }
 
 .primary-media {
   width: 100%;
@@ -876,6 +886,7 @@ body {
     .primary-media {
       background-size: contain;
       background-repeat: no-repeat;
+      background-position-x: 100%;
       height: 100%;
       width: 100%;
       padding: 0; } }
@@ -883,6 +894,12 @@ body {
     .primary-media {
       background-position-x: right;
       background-position-y: top; } }
+  @media screen and (min-width: 1080px) {
+    .primary-media {
+      background-position-x: 50%; } }
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
+    .primary-media {
+      background-position-x: right; } }
   @media screen and (min-width: 1460px) {
     .primary-media {
       background-position-x: right;
@@ -904,7 +921,7 @@ body {
     font-size: 5rem;
     line-height: 6rem;
     margin-bottom: 2rem;
-    font-size: 7rem;
+    font-size: 6rem;
     margin-top: 1rem; }
     @media screen and (min-width: 780px) {
       .vista .basic-info__title {

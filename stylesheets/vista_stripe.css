@@ -131,8 +131,8 @@ Backtrace:
 /Users/aarongitlin/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
 /Users/aarongitlin/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/base.rb:466:in `start'
 /Users/aarongitlin/.rvm/gems/ruby-2.4.0/gems/middleman-cli-4.2.1/bin/middleman:70:in `<top (required)>'
-/Users/aarongitlin/.rvm/gems/ruby-2.4.0/bin/middleman:23:in `load'
-/Users/aarongitlin/.rvm/gems/ruby-2.4.0/bin/middleman:23:in `<main>'
+/Users/aarongitlin/.rvm/gems/ruby-2.4.0/bin/middleman:22:in `load'
+/Users/aarongitlin/.rvm/gems/ruby-2.4.0/bin/middleman:22:in `<main>'
 /Users/aarongitlin/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
 /Users/aarongitlin/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
 */
