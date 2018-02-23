@@ -81,16 +81,22 @@
     overflow-y: auto;
     margin: 0;
     .block {
-      padding: 2rem 12.5% 12.5% 2rem;
+      padding: 2rem 2rem 1.5% 2rem;
     }
   }
   // taller height small-desktop views
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
     width: 41.67%;
+    .block {
+      padding: 2rem 12.5% 12.5% 2rem;
+    }
   }
   // short medium desktop view
   @media screen and (min-width: 1080px) {
     width: 50%;
+    .block {
+      padding: 1.5rem 2rem 2rem 12.5%;
+    }
   }
 
   // taller height medium desktop view
@@ -99,15 +105,22 @@
     //padding-left: 8.33%;
     //padding-top: 6rem;
   }
+
   // large desktops
   @media screen and (min-width: 1460px) {
     width: 50%;
     display: inline-block;
     .block {
-      padding: 2rem 12.5% 12.5% 2rem;
-      margin: auto 2rem;
+      padding: 2rem 4% 1.5rem 12.5%;
     }
   }
+  @media screen and (min-width: 1460px) and (max-aspect-ratio: 16/8) {
+    width: 41.67%;
+    .block {
+      padding: 2rem 8% 1.5rem 8%;
+    }
+  }
+
 }
 
 .media-wrapper {
@@ -128,7 +141,7 @@
     height: calc(100vh - 4rem);
     width: 50%;
     display: -webkit-box;
-    min-height: 380px;
+    min-height: 450px;
   }
   // taller small desktop views
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
@@ -143,15 +156,14 @@
   }
   // shorter medium desktop view
   @media screen and (min-width: 1080px) {
-    padding: 0;
+    padding: 1.5rem;
     width: 50%;
     min-height: 540px; // This is from the max width at this breakpoint, 1460, at 5/12 columns, a kind of minimum
   }
   // taller medium desktop view
-  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/9) {
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/8) {
     padding: 0;
     width: 58.33%;
-    min-height: 608px;
   }
   //tallest medium desktop view
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/10) {
@@ -166,9 +178,12 @@
     position: sticky;
     top: 4rem;
     padding: 1.5rem;
-    min-height: 639px; // 1460 divided by 16:7?
+    min-height: 672px; // 1460 divided by 16:7?
   }
   // large desktops with taller heights
+  @media screen and (min-width: 1460px) and (max-aspect-ratio: 16/8) {
+    width: 58.33%;
+  }
 
 }
 .primary-media {
@@ -186,6 +201,7 @@
   @media screen and (min-width: 780px) {
     background-size: contain;
     background-repeat:no-repeat;
+    background-position-x: 100%;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -194,6 +210,13 @@
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/10) {
     background-position-x: right;
     background-position-y: top;
+  }
+
+  @media screen and (min-width: 1080px) {
+    background-position-x: 50%;
+  }
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/8) {
+    background-position-x: right;
   }
   // large desktops
    @media screen and (min-width: 1460px) {

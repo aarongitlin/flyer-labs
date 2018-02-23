@@ -27,7 +27,7 @@ $rsvp-text: $text-color;
 
 @mixin page-heading {
   @include heading;
-  font-size: 7rem;
+  font-size: 6rem;
 }
 @mixin subheading {
   font-family: FuturaLTPRo-book;
