@@ -71,7 +71,7 @@
   // tablet portrait
   @media screen and (min-width: 540px) {
     .block {
-      padding: 2rem 12.5% 12.5% 2rem;
+      padding: 2rem 12.5%;
     }
   }
   // short height - small desktop and tablet landscape
@@ -81,21 +81,21 @@
     overflow-y: auto;
     margin: 0;
     .block {
-      padding: 2rem 2rem 1.5% 2rem;
+      padding: 2rem 8% 1.5rem 16%;
     }
   }
   // taller height small-desktop views
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
     width: 41.67%;
     .block {
-      padding: 2rem 12.5% 12.5% 2rem;
+      padding: 2rem 12% 1.5rem 12%;
     }
   }
   // short medium desktop view
   @media screen and (min-width: 1080px) {
     width: 50%;
     .block {
-      padding: 1.5rem 2rem 2rem 12.5%;
+      padding: 2rem 12% 2rem 12%;
     }
   }
 
@@ -111,7 +111,7 @@
     width: 50%;
     display: inline-block;
     .block {
-      padding: 2rem 4% 1.5rem 12.5%;
+      padding: 2rem 4% 1.5rem 12%;
     }
   }
   @media screen and (min-width: 1460px) and (max-aspect-ratio: 16/8) {
