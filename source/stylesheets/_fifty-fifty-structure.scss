@@ -77,18 +77,20 @@
   // short height - small desktop and tablet landscape
   // text should still be considered mobile style here
   @media screen and (min-width: 780px) {
-    width: 50%;
     overflow-y: auto;
     margin: 0;
+    width: calc(50% + 6rem);
     .block {
-      padding: 2rem 8% 1.5rem 16%;
+      padding: 2rem 8% 2rem 8%;
+      padding-right: calc(8% + 6rem);
     }
   }
   // taller height small-desktop views
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
-    width: 41.67%;
+    width: calc(41.67% + 6rem);
     .block {
-      padding: 2rem 12% 1.5rem 12%;
+      padding: 2rem 12% 2rem 8%;
+      padding-right: calc(12% + 6rem);
     }
   }
   // short medium desktop view

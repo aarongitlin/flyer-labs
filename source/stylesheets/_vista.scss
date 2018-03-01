@@ -1,20 +1,22 @@
 ///// Vista vibe experiment
 
 // Vibe base colors
-$vibe-base-color: #D77AB6;
+$vibe-base-color: #F8D6CD;
 
 // Designer overrides
-$text-color: #AC417B;
-$rsvp-background: #DBF4EA;
+$text-color: #3D5F75;
+$rsvp-background: #FEF1ED;
 
 // Fixed colors
 $header-color-2: #fff;
 
 // Generated
-$background-color: saturate( lighten( $vibe-base-color, 20% ), 20% );
+$background-color: saturate( lighten( $vibe-base-color, 0% ), 0% );
 $background-color-alt: lighten( $background-color, 5% );
-$header-color-1: desaturate( darken( $vibe-base-color, 5% ), 20% );
-$header-background: saturate( lighten( $vibe-base-color, 25% ), 20%);
+$header-color-1: #DFAA9C;
+$header-background: $background-color-alt;
+//$header-color-1: desaturate( darken( $vibe-base-color, 5% ), 20% );
+//$header-background: saturate( lighten( $vibe-base-color, 25% ), 20%);
 $rsvp-text: $text-color;
 
 
