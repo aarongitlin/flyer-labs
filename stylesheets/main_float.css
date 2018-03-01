@@ -889,16 +889,16 @@ body {
       background-position-y: top; } }
 
 .vista {
-  background-color: #f6c1e3;
-  color: #AC417B; }
+  background-color: #f8d6cd;
+  color: #3D5F75; }
   .vista.wrapper--go {
-    background-color: #fae0f1; }
+    background-color: #fcf0ec; }
   .vista .header-toolbar {
-    background-color: #f9d7ed; }
+    background-color: #fbe8e3; }
     .vista .header-toolbar__logo {
-      color: #bd7aa5; }
+      color: #DFAA9C; }
   .vista .two-columns {
-    background-color: #f6c1e3; }
+    background-color: #f8d6cd; }
   .vista .basic-info__title {
     font-family: Golden Plains;
     font-size: 5rem;
@@ -956,8 +956,8 @@ body {
   .vista .rsvp-button {
     width: 150px;
     height: 60px;
-    background-color: #DBF4EA;
-    color: #AC417B;
+    background-color: #FEF1ED;
+    color: #3D5F75;
     border-radius: 80px;
     -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);

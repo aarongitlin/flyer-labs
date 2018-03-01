@@ -792,16 +792,18 @@ body {
       padding: 2rem 12.5%; } }
   @media screen and (min-width: 780px) {
     .blocks-list {
-      width: 50%;
       overflow-y: auto;
-      margin: 0; }
+      margin: 0;
+      width: calc(50% + 6rem); }
       .blocks-list .block {
-        padding: 2rem 8% 1.5rem 16%; } }
+        padding: 2rem 8% 2rem 8%;
+        padding-right: calc(8% + 6rem); } }
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
     .blocks-list {
-      width: 41.67%; }
+      width: calc(41.67% + 6rem); }
       .blocks-list .block {
-        padding: 2rem 12% 1.5rem 12%; } }
+        padding: 2rem 12% 2rem 8%;
+        padding-right: calc(12% + 6rem); } }
   @media screen and (min-width: 1080px) {
     .blocks-list {
       width: 50%; }
@@ -914,16 +916,16 @@ body {
       background-position-y: top; } }
 
 .vista {
-  background-color: #f6c1e3;
-  color: #AC417B; }
+  background-color: #f8d6cd;
+  color: #3D5F75; }
   .vista.wrapper--go {
-    background-color: #fae0f1; }
+    background-color: #fcf0ec; }
   .vista .header-toolbar {
-    background-color: #f9d7ed; }
+    background-color: #fbe8e3; }
     .vista .header-toolbar__logo {
-      color: #bd7aa5; }
+      color: #DFAA9C; }
   .vista .two-columns {
-    background-color: #f6c1e3; }
+    background-color: #f8d6cd; }
   .vista .basic-info__title {
     font-family: Golden Plains;
     font-size: 5rem;
@@ -981,8 +983,8 @@ body {
   .vista .rsvp-button {
     width: 150px;
     height: 60px;
-    background-color: #DBF4EA;
-    color: #AC417B;
+    background-color: #FEF1ED;
+    color: #3D5F75;
     border-radius: 80px;
     -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
@@ -1046,20 +1048,20 @@ body {
           justify-content: space-around; }
 
 .block:nth-child(even) {
-  background-color: #f9d7ed; }
+  background-color: #fbe8e3; }
 
 @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 10) {
-  .blocks-list {
-    border-right: 2px solid #f9d7ed; } }
+  .blocks-list .block {
+    margin-left: 1.5rem; } }
 @media screen and (min-width: 1080px) {
-  .blocks-list {
-    border-right: 2px solid #f9d7ed; } }
+  .blocks-list .block {
+    margin-left: 1.5rem; } }
 @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
-  .blocks-list {
-    border: none; } }
+  .blocks-list .block {
+    margin-left: 0; } }
 @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
-  .blocks-list {
-    border-right: 2px solid #f9d7ed; } }
+  .blocks-list .block {
+    margin-left: 1.5rem; } }
 @media screen and (min-width: 1460px) {
-  .blocks-list {
-    border-right: 2px solid #f9d7ed; } }
+  .blocks-list .block {
+    margin-left: 1.5rem; } }
