@@ -2,3 +2,33 @@
 .block:nth-child(even) {
   background-color: $background-color-alt;
 }
+
+
+
+
+.blocks-list { // just structural info here
+
+  @media screen and (min-width: 780px) and (max-aspect-ratio: 16/10) {
+    border-right: 2px solid $background-color-alt;
+  }
+
+  // short medium desktop view
+  @media screen and (min-width: 1080px) {
+    border-right: 2px solid $background-color-alt;
+  }
+
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/8) {
+    border: none;
+  }
+
+  // taller height medium desktop view
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/10) {
+    border-right: 2px solid $background-color-alt;
+  }
+
+  // large desktops
+  @media screen and (min-width: 1460px) {
+    border-right: 2px solid $background-color-alt;
+  }
+
+}
