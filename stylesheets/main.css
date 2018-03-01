@@ -789,33 +789,41 @@ body {
     padding: 2rem 1rem 1rem 2rem; }
   @media screen and (min-width: 540px) {
     .blocks-list .block {
-      padding: 2rem 12.5% 12.5% 2rem; } }
+      padding: 2rem 12.5%; } }
   @media screen and (min-width: 780px) {
     .blocks-list {
       width: 50%;
       overflow-y: auto;
       margin: 0; }
       .blocks-list .block {
-        padding: 2rem 2rem 1.5% 2rem; } }
+        padding: 2rem 8% 1.5rem 16%; } }
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
     .blocks-list {
       width: 41.67%; }
       .blocks-list .block {
-        padding: 2rem 12.5% 12.5% 2rem; } }
+        padding: 2rem 12% 1.5rem 12%; } }
   @media screen and (min-width: 1080px) {
     .blocks-list {
       width: 50%; }
       .blocks-list .block {
-        padding: 1.5rem 2rem 2rem 12.5%; } }
-  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 9) {
+        padding: 2rem 12% 2rem 12%; } }
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
     .blocks-list {
-      width: 41.67%; } }
+      width: calc(50% + 12rem); }
+      .blocks-list .block {
+        padding: 2rem 16% 2rem 8%;
+        padding-right: calc(16% + 12rem); } }
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
+    .blocks-list {
+      width: 41.67%; }
+      .blocks-list .block {
+        padding-right: 16%; } }
   @media screen and (min-width: 1460px) {
     .blocks-list {
       width: 50%;
       display: inline-block; }
       .blocks-list .block {
-        padding: 2rem 4% 1.5rem 12.5%; } }
+        padding: 2rem 4% 1.5rem 12%; } }
   @media screen and (min-width: 1460px) and (max-aspect-ratio: 16 / 8) {
     .blocks-list {
       width: 41.67%; }
@@ -988,7 +996,7 @@ body {
     font-size: 18px;
     font-weight: bold; }
   .vista .text-block {
-    margin-top: 2rem; }
+    padding-top: 2rem; }
     .vista .text-block__title {
       font-family: Golden Plains;
       font-size: 5rem;
@@ -1002,7 +1010,7 @@ body {
       line-height: 1.5rem;
       margin-top: 2rem; }
   .vista .guestlist {
-    margin-top: 2rem; }
+    padding-top: 2rem; }
     .vista .guestlist__title {
       font-family: Golden Plains;
       font-size: 5rem;

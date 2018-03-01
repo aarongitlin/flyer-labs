@@ -971,7 +971,7 @@ body {
     font-size: 18px;
     font-weight: bold; }
   .vista .text-block {
-    margin-top: 2rem; }
+    padding-top: 2rem; }
     .vista .text-block__title {
       font-family: Golden Plains;
       font-size: 5rem;
@@ -985,7 +985,7 @@ body {
       line-height: 1.5rem;
       margin-top: 2rem; }
   .vista .guestlist {
-    margin-top: 2rem; }
+    padding-top: 2rem; }
     .vista .guestlist__title {
       font-family: Golden Plains;
       font-size: 5rem;
