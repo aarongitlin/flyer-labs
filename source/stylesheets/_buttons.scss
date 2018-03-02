@@ -1,0 +1,33 @@
+.pages-rounded-button {
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+
+  &--large {
+    height: 42px;
+    padding: 2px 2rem 0;
+  }
+
+  &--solid {
+    background-color: rgba(0,90,200,1.0);
+    color: #fff;
+    transition: background-color 0.15s ease-in-out;
+    &:hover {
+      background-color: rgba(0,90,200,0.75);
+      transition: background-color 0.15s ease-in-out;
+    }
+  }
+}
