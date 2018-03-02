@@ -612,6 +612,39 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%; }
 
+.pages-rounded-button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap; }
+  .pages-rounded-button--large {
+    height: 42px;
+    padding: 2px 2rem 0; }
+  .pages-rounded-button--solid {
+    background-color: #005ac8;
+    color: #fff;
+    -webkit-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out; }
+    .pages-rounded-button--solid:hover {
+      background-color: rgba(0, 90, 200, 0.75);
+      -webkit-transition: background-color 0.15s ease-in-out;
+      transition: background-color 0.15s ease-in-out; }
+
 .main-action-bar {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
