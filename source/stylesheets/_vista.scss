@@ -1,14 +1,15 @@
 ///// Vista vibe experiment
 
 // Vibe base colors
-$vibe-base-color: #D77AB6;
+$vibe-base-color: #A882BF;
+//hsl(321, 54%, 75%)
 
 // Designer overrides
-$text-color: #AC417B;
+$text-color: #803B60;
 $rsvp-background: #DBF4EA;
 
 // Fixed colors
-$header-color-2: #fff;
+$header-color-2: #FFF;
 
 // Generated
 $background-color: saturate( lighten( $vibe-base-color, 20% ), 20% );
@@ -85,6 +86,11 @@ $rsvp-text: $text-color;
       margin-left: 16.67%;
       margin-top: 2rem;
     }
+
+    &__date a {
+      color:white;
+    }
+
     &__time {
       @include subheading;
       margin-left: 16.67%;

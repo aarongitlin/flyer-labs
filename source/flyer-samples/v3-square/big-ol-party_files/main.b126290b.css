@@ -1941,6 +1941,7 @@
 }
 .style-vista .basic-info__address-link{
     text-decoration:underline
+    color:white;
 }
 .style-vista .basic-info__actions{
     display:none

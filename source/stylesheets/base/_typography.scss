@@ -22,7 +22,7 @@ p {
 }
 
 a {
-  color: $action-color;
+  color: white;
   text-decoration-skip: ink;
   transition: color $base-duration $base-timing;
 
@@ -35,6 +35,10 @@ a {
     outline-offset: $focus-outline-offset;
   }
 }
+
+// basic-info__date a {
+//   color: white;
+// }
 
 hr {
   border-bottom: $base-border;
