@@ -23,13 +23,10 @@ body {
 }
 
 // future todo: load css conditionally
-
-@import "buttons";
-
 @import "action-bar";
 
 @import "editor";
 
-@import "fifty-fifty-structure";
+@import "fifty-fifty-structure--floated";
 
 @import "vista";

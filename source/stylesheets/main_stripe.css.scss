@@ -23,9 +23,6 @@ body {
 }
 
 // future todo: load css conditionally
-
-@import "buttons";
-
 @import "action-bar";
 
 @import "editor";
@@ -33,3 +30,5 @@ body {
 @import "fifty-fifty-structure";
 
 @import "vista";
+
+@import "vista-stripe";

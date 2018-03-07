@@ -1,6 +1,7 @@
 ///// Vista vibe experiment
 
 // Vibe base colors
+
 $vibe-base-color: #A882BF;
 //hsl(321, 54%, 75%)
 
@@ -12,10 +13,12 @@ $rsvp-background: #DBF4EA;
 $header-color-2: #FFF;
 
 // Generated
-$background-color: saturate( lighten( $vibe-base-color, 20% ), 20% );
+$background-color: saturate( lighten( $vibe-base-color, 0% ), 0% );
 $background-color-alt: lighten( $background-color, 5% );
-$header-color-1: desaturate( darken( $vibe-base-color, 5% ), 20% );
-$header-background: saturate( lighten( $vibe-base-color, 25% ), 20%);
+$header-color-1: #DFAA9C;
+$header-background: $background-color-alt;
+//$header-color-1: desaturate( darken( $vibe-base-color, 5% ), 20% );
+//$header-background: saturate( lighten( $vibe-base-color, 25% ), 20%);
 $rsvp-text: $text-color;
 
 
@@ -28,7 +31,7 @@ $rsvp-text: $text-color;
 
 @mixin page-heading {
   @include heading;
-  font-size: 7rem;
+  font-size: 6rem;
 }
 @mixin subheading {
   font-family: FuturaLTPRo-book;
@@ -47,11 +50,11 @@ $rsvp-text: $text-color;
   line-height: 1.5rem;
 }
 
-.wrapper--go {
-  background-color: $background-color;
-}
-
 .vista {
+  &.wrapper--go {
+    background-color: lighten( $background-color, 7% );
+  }
+
   background-color: $background-color;
   color: $text-color;
 
@@ -70,6 +73,9 @@ $rsvp-text: $text-color;
     &__title {
       @include page-heading;
       margin-top: 1rem;
+      @media screen and (min-width: 780px) {
+        margin-top: 4rem;
+      }
     }
     &__host {
       @include subheading;
@@ -104,9 +110,6 @@ $rsvp-text: $text-color;
   }
 
   .rsvp-button {
-    margin-top: 1rem;
-    top: 1rem;
-    left: 1rem;
     width: 150px;
     height: 60px;
     background-color: $rsvp-background;
@@ -125,7 +128,7 @@ $rsvp-text: $text-color;
   }
 
   .text-block {
-    margin-top: 4rem;
+    padding-top: 2rem;
     &__title {
       @include heading;
     }
@@ -136,7 +139,7 @@ $rsvp-text: $text-color;
   }
 
   .guestlist {
-    margin-top: 4rem;
+    padding-top: 2rem;
     &__title {
       @include heading;
     }
@@ -149,8 +152,7 @@ $rsvp-text: $text-color;
     }
   }
   .footer {
-    margin: 4rem auto 2rem auto;
-    max-width: 20rem;
+    padding: 4rem auto 2rem auto;
     &__logo {
       width: 8rem;
       display: block;

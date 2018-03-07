@@ -5,7 +5,7 @@
 .wrapper--editor {
   height: 100%;
   background-color: #eee;
-  max-width: 1440px;
+  max-width: 1400px;
   margin: auto;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -25,24 +25,27 @@
   flex: 1 0 10rem;
   background-color: #666;
   align-self: stretch;
+  margin-left: 1.5rem;
 }
 
 .flyer-preview {
   background-color: #fff;
   width: 100%;
   flex: 1 1 auto;
-  margin: 2rem 2rem 6rem 2rem;
+  margin: 1.5rem 1.5rem 5rem 2rem;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
-  min-height: 480px;
-  max-height: 700px;
+  max-height: 750px;
+
+
 
   &__browser-chrome {
-    height: 2rem;
+    height: 1.5rem;
     background-color: #666;
   }
   &__content {
-    height: calc(100% - 2rem);
-    min-width: 1040px;
+    height: calc(100% - 1.5rem);
+    min-height: 490px;
+    min-width: 784px;
     iframe {
       border: none;
       width: 100%;
