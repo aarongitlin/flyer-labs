@@ -1,0 +1,222 @@
+///// Vista vibe experiment
+
+// Vibe base colors
+
+$vibe-base-color: #EDE4DE;
+//hsl(321, 54%, 75%)
+
+// Designer overrides
+$text-color: #38501e;
+$rsvp-background: #f9f1ea;
+
+// Fixed colors
+$header-color-2: #FFF;
+
+// Generated
+$background-color: saturate( lighten( $vibe-base-color, 0% ), 0% );
+$background-color-alt: lighten( $background-color, 5% );
+$header-color-1: #7d7a78;
+$header-background: #cdc6bf;
+//$header-color-1: desaturate( darken( $vibe-base-color, 5% ), 20% );
+//$header-background: saturate( lighten( $vibe-base-color, 25% ), 20%);
+$rsvp-text: #892645;
+
+@font-face{
+    font-family:Perpetua Titling;
+    src:url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/4ad5a9a2-4c98-47bf-8614-0b3b6a8e3817.0171e159.woff2) format("woff2"),url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/a5c23359-e4bd-4fc2-ba85-b2dc80fe5d73.bc2eced9.woff) format("woff");
+    // font-weight:500;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face{
+    font-family:Bembo;
+    src:url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/317cdafb-860b-4d5e-aef3-bdbdad1385eb.4c0878c2.woff2) format("woff2"),url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/b30aa007-b477-43cc-81eb-d34f48807cb5.9b963d9b.woff) format("woff");
+    // font-weight:500;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family:Trade Gothic Bold Ext;
+    src:url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/4bf77dbf-9e1d-4b9c-927f-625e180e9016.ddd5df30.woff2) format("woff2"),url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/3480b7c2-478a-4683-a465-48610e313ad5.af41775f.woff) format("woff");
+    // font-weight:500;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@mixin heading {
+  font-family: Perpetua Titling;
+  font-size: 3rem;
+  line-height: 2.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@mixin page-heading {
+  @include heading;
+  font-size: 3rem;
+}
+@mixin subheading {
+  font-family: Trade Gothic Bold Ext;
+  font-weight: 100;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.25rem;
+}
+
+@mixin text {
+  font-family: Bembo;
+  font-weight: 100;
+  font-size:  1.375rem;
+  // letter-spacing: .5px;
+  line-height: 2rem;
+  text-align: center;
+  justify-content: center;
+  // padding: 0 3.5rem;
+}
+
+@mixin link {
+  //blah blah
+}
+
+
+
+.vista {
+  &.wrapper--go {
+    background-color: lighten( $background-color, 7% );
+  }
+
+  background-color: $background-color;
+  color: $text-color;
+
+  .header-toolbar {
+    background-color: $header-background;
+    &__logo {
+      color: $header-color-1;
+    }
+  }
+
+  .two-columns {
+    background-color: $background-color;
+  }
+
+  .basic-info {
+    margin-top:64px;
+
+    &__title {
+      @include page-heading;
+      margin-top: 1rem;
+      @media screen and (min-width: 780px) {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+      }
+    }
+    &__host {
+      @include subheading;
+      margin-bottom: 3rem;
+    }
+    &__short-description {
+      @include text;
+      // margin-left: 16.67%;
+      margin-bottom: 3rem;
+    }
+    &__date {
+      @include subheading;
+      // margin-left: 16.67%;
+    }
+
+    &__date a {
+      color: white;
+    }
+
+    &__time {
+      @include subheading;
+      // margin-left: 16.67%;
+      margin-top: 0.25rem;
+
+    }
+    &__address {
+      @include subheading;
+
+      // margin-left: 16.67%;
+      margin-top: 0.25rem;
+      margin-bottom: 5rem;
+    }
+    &__address a {
+      color: $text-color;
+    }
+
+  }
+
+  .rsvp-button {
+    width: 153px;
+    height: 60px;
+    background-color: $rsvp-background;
+    color: $rsvp-text;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.24);
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 1rem;
+    font-family: Trade Gothic Bold Ext;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid $rsvp-text;
+    text-indent: 12px;
+    position: fixed;
+    left: 1.25rem;
+    bottom: 1.25rem;
+  }
+
+  .text-block {
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    &__title {
+      @include heading;
+    }
+    &__text {
+      @include text;
+      margin-top: 4rem;
+    }
+  }
+
+  .guestlist {
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    &__title {
+      @include heading;
+    }
+    &__guests {
+      margin-top: 4rem;
+      @include text;
+      li {
+        display: inline-block;
+        width: 50%;
+      }
+    }
+  }
+  .footer {
+    padding: 4rem auto 2rem auto;
+    &__logo {
+      width: 8rem;
+      display: block;
+      height: auto;
+      margin: auto;
+      fill: currentColor;
+    }
+    &__list-items {
+      font-size: 0.875rem;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
