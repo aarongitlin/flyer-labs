@@ -79,7 +79,7 @@
   @media screen and (min-width: 780px) {
     overflow-y: auto;
     margin: 0;
-    width: calc(50% + 6rem);
+    width: calc(50% + 6rem); // this random hacky thing is to make the stripes extend to the edge of the image on certain views. don't judge plz.
     .block {
       padding: 2rem 8% 2rem 8%;
       padding-right: calc(8% + 6rem);
@@ -109,7 +109,7 @@
       padding-right: calc(16% + 12rem);
     }
   }
-
+  // large desktops, taller views
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/10) {
     width: 41.67%;
     .block {
@@ -125,6 +125,7 @@
       padding: 2rem 4% 1.5rem 12%;
     }
   }
+  // large desktops, taller views
   @media screen and (min-width: 1460px) and (max-aspect-ratio: 16/8) {
     width: 41.67%;
     .block {
@@ -208,6 +209,7 @@
   background-repeat:no-repeat;
   // tablet-portrait
     // no change
+
   // shorter height small desktop
   @media screen and (min-width: 780px) {
     background-size: contain;
@@ -223,9 +225,11 @@
     background-position-y: top;
   }
 
+  // medium desktop, shorter views
   @media screen and (min-width: 1080px) {
     background-position-x: 50%;
   }
+  // medium desktop, taller views
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/8) {
     background-position-x: right;
   }
