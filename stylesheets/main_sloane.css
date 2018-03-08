@@ -612,6 +612,43 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%; }
 
+.pages-rounded-button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap; }
+  .pages-rounded-button--large {
+    height: 42px;
+    padding: 2px 2rem 0; }
+  .pages-rounded-button--solid {
+    background-color: #005ac8;
+    color: #fff;
+    -webkit-transition: background-color 0.12s ease-in-out;
+    transition: background-color 0.12s ease-in-out; }
+    .pages-rounded-button--solid:hover {
+      background-color: rgba(0, 90, 200, 0.75);
+      -webkit-transition: background-color 0.12s ease-in-out;
+      transition: background-color 0.12s ease-in-out; }
+    .pages-rounded-button--solid:active {
+      background-color: rgba(0, 90, 200, 0.85);
+      -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.16);
+              box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.16); }
+
 .main-action-bar {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
@@ -915,114 +952,159 @@ body {
       background-position-x: right;
       background-position-y: top; } }
 
+@font-face {
+  font-family: Perpetua Titling;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/4ad5a9a2-4c98-47bf-8614-0b3b6a8e3817.0171e159.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/a5c23359-e4bd-4fc2-ba85-b2dc80fe5d73.bc2eced9.woff) format("woff");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: Bembo;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/317cdafb-860b-4d5e-aef3-bdbdad1385eb.4c0878c2.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/b30aa007-b477-43cc-81eb-d34f48807cb5.9b963d9b.woff) format("woff");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: Trade Gothic Bold Ext;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/4bf77dbf-9e1d-4b9c-927f-625e180e9016.ddd5df30.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/3480b7c2-478a-4683-a465-48610e313ad5.af41775f.woff) format("woff");
+  font-style: normal;
+  font-weight: normal; }
 .vista {
-  background-color: #f8d6cd;
-  color: #3d5f75; }
+  background-color: #ede4de;
+  color: #38501e; }
   .vista.wrapper--go {
-    background-color: #fcf0ec; }
-  .vista .header-toolbar__logo {
-    opacity: 0;
-    color: #DFAA9C; }
-  .vista .basic-info__title {
-    font-family: Golden Plains;
-    font-size: 5rem;
-    line-height: 6rem;
-    margin-bottom: 2rem;
-    font-size: 6rem;
-    margin-top: 1rem; }
-    @media screen and (min-width: 780px) {
-      .vista .basic-info__title {
-        margin-top: 4rem; } }
-  .vista .basic-info__host {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 0.875rem;
-    letter-spacing: 3px;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    margin-left: 16.67%;
-    margin-top: 2rem; }
-  .vista .basic-info__short-description {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 1rem;
-    letter-spacing: .5px;
-    line-height: 1.5rem;
-    margin-left: 16.67%;
-    margin-top: 2rem; }
-  .vista .basic-info__date {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 0.875rem;
-    letter-spacing: 3px;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    margin-left: 16.67%;
-    margin-top: 2rem; }
-  .vista .basic-info__date a {
-    color: white; }
-  .vista .basic-info__time {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 0.875rem;
-    letter-spacing: 3px;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    margin-left: 16.67%;
-    margin-top: 0.25rem; }
-  .vista .basic-info__address {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 0.875rem;
-    letter-spacing: 3px;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    margin-left: 16.67%;
-    margin-top: 0.25rem; }
+    background-color: #faf7f5; }
+  .vista .header-toolbar {
+    background-color: #cdc6bf; }
+    .vista .header-toolbar__logo {
+      color: #7d7a78; }
+  .vista .two-columns {
+    background-color: #ede4de; }
+  .vista .basic-info {
+    margin-top: 64px; }
+    .vista .basic-info__title {
+      font-family: Perpetua Titling;
+      font-size: 3rem;
+      line-height: 2.75rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 1rem; }
+      @media screen and (min-width: 780px) {
+        .vista .basic-info__title {
+          margin-top: 4rem;
+          margin-bottom: 3rem; } }
+    .vista .basic-info__host {
+      font-family: Trade Gothic Bold Ext;
+      font-weight: 100;
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.25rem;
+      margin-bottom: 3rem; }
+    .vista .basic-info__short-description {
+      font-family: Bembo;
+      font-weight: 100;
+      font-size: 1.375rem;
+      line-height: 2rem;
+      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 3rem; }
+    .vista .basic-info__date {
+      font-family: Trade Gothic Bold Ext;
+      font-weight: 100;
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.25rem; }
+    .vista .basic-info__date a {
+      color: white; }
+    .vista .basic-info__time {
+      font-family: Trade Gothic Bold Ext;
+      font-weight: 100;
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.25rem;
+      margin-top: 0.25rem; }
+    .vista .basic-info__address {
+      font-family: Trade Gothic Bold Ext;
+      font-weight: 100;
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.25rem;
+      margin-top: 0.25rem;
+      margin-bottom: 5rem; }
+    .vista .basic-info__address a {
+      color: #38501e; }
   .vista .rsvp-button {
-    background-color: #DBF4EA;
-    border-radius: 80px;
+    width: 153px;
+    height: 60px;
+    background-color: #f9f1ea;
+    color: #892645;
     -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
     display: inline-block;
     text-align: center;
     vertical-align: center;
     padding-top: 1rem;
-    font-family: FuturaLTPRo-book;
+    font-family: Trade Gothic Bold Ext;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 18px;
-    font-weight: bold;
-    z-index: 1; }
+    letter-spacing: 13px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #892645;
+    text-indent: 12px;
+    position: fixed;
+    left: 1.25rem;
+    bottom: 1.25rem; }
   .vista .text-block {
-    opacity: 0;
-    position: relative;
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    margin-bottom: 5rem; }
     .vista .text-block__title {
-      font-family: Golden Plains;
-      font-size: 5rem;
-      line-height: 6rem;
-      margin-bottom: 2rem; }
+      font-family: Perpetua Titling;
+      font-size: 3rem;
+      line-height: 2.75rem;
+      margin-bottom: 2rem;
+      text-align: center; }
     .vista .text-block__text {
-      font-family: FuturaLTPRo-book;
+      font-family: Bembo;
       font-weight: 100;
-      font-size: 1rem;
-      letter-spacing: .5px;
-      line-height: 1.5rem;
-      margin-top: 2rem; }
+      font-size: 1.375rem;
+      line-height: 2rem;
+      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 4rem; }
   .vista .guestlist {
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    margin-bottom: 5rem; }
     .vista .guestlist__title {
-      font-family: Golden Plains;
-      font-size: 5rem;
-      line-height: 6rem;
-      margin-bottom: 2rem; }
+      font-family: Perpetua Titling;
+      font-size: 3rem;
+      line-height: 2.75rem;
+      margin-bottom: 2rem;
+      text-align: center; }
     .vista .guestlist__guests {
-      font-family: FuturaLTPRo-book;
+      margin-top: 4rem;
+      font-family: Bembo;
       font-weight: 100;
-      font-size: 1rem;
-      letter-spacing: .5px;
-      line-height: 1.5rem; }
+      font-size: 1.375rem;
+      line-height: 2rem;
+      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .vista .guestlist__guests li {
         display: inline-block;
         width: 50%; }
@@ -1045,199 +1127,3 @@ body {
               align-items: center;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
-
-.vista .two-columns {
-  -webkit-animation: fadeBGColorIn 1.25s ease-in-out;
-          animation: fadeBGColorIn 1.25s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-@-webkit-keyframes fadeBGColorIn {
-  from {
-    background-color: #fff; }
-  to {
-    background-color: #f8d6cd; } }
-@keyframes fadeBGColorIn {
-  from {
-    background-color: #fff; }
-  to {
-    background-color: #f8d6cd; } }
-.header-toolbar {
-  -webkit-animation: fadeToolbarBGIn 1.25s ease-in-out;
-          animation: fadeToolbarBGIn 1.25s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-@-webkit-keyframes fadeToolbarBGIn {
-  from {
-    background-color: #fff; }
-  to {
-    background-color: #fbe8e3; } }
-@keyframes fadeToolbarBGIn {
-  from {
-    background-color: #fff; }
-  to {
-    background-color: #fbe8e3; } }
-[class*="header-toolbar__"] {
-  -webkit-animation: fadeIn 1.25s ease-in-out;
-          animation: fadeIn 1.25s ease-in-out;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-.media-wrapper {
-  opacity: 0;
-  -webkit-animation-name: fadeIn, moveInFromLeft;
-          animation-name: fadeIn, moveInFromLeft;
-  -webkit-animation-duration: 0.85s, 0.85s;
-          animation-duration: 0.85s, 0.85s;
-  -webkit-animation-timing-function: ease-in-out, ease-in-out;
-          animation-timing-function: ease-in-out, ease-in-out;
-  -webkit-animation-delay: 0.75s, 0.75s;
-          animation-delay: 0.75s, 0.75s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-webkit-keyframes moveInFromLeft {
-  0% {
-    right: 1rem; }
-  100% {
-    right: 0rem; } }
-@keyframes moveInFromLeft {
-  0% {
-    right: 1rem; }
-  100% {
-    right: 0rem; } }
-.basic-info__title {
-  opacity: 0;
-  position: relative;
-  -webkit-animation-name: fadeIn, moveInFromLeft;
-          animation-name: fadeIn, moveInFromLeft;
-  -webkit-animation-duration: 0.75s, 0.75s;
-          animation-duration: 0.75s, 0.75s;
-  -webkit-animation-timing-function: ease-in-out, ease-in-out;
-          animation-timing-function: ease-in-out, ease-in-out;
-  -webkit-animation-delay: 1s, 1s;
-          animation-delay: 1s, 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes moveInFromLeft {
-  0% {
-    right: 1rem; }
-  100% {
-    right: 0rem; } }
-.rsvp-button {
-  width: 60px;
-  height: 60px;
-  left: 2rem;
-  color: rgba(61, 95, 117, 0);
-  -webkit-animation-name: moveButton, buttonOpen, buttonTextColor;
-          animation-name: moveButton, buttonOpen, buttonTextColor;
-  -webkit-animation-duration: 0.25s, 0.65s, 0.5s;
-          animation-duration: 0.25s, 0.65s, 0.5s;
-  -webkit-animation-delay: 1s, 1.1s, 1.65s;
-          animation-delay: 1s, 1.1s, 1.65s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-@-webkit-keyframes buttonOpen {
-  0% {
-    width: 60px; }
-  100% {
-    width: 150px; } }
-@keyframes buttonOpen {
-  0% {
-    width: 60px; }
-  100% {
-    width: 150px; } }
-@-webkit-keyframes moveButton {
-  0% {
-    left: 2rem; }
-  100% {
-    left: 3rem; } }
-@keyframes moveButton {
-  0% {
-    left: 2rem; }
-  100% {
-    left: 3rem; } }
-@-webkit-keyframes buttonTextColor {
-  0% {
-    color: rgba(61, 95, 117, 0); }
-  100% {
-    color: #3d5f75; } }
-@keyframes buttonTextColor {
-  0% {
-    color: rgba(61, 95, 117, 0); }
-  100% {
-    color: #3d5f75; } }
-.basic-info__host, .basic-info__short-description, .basic-info__date, .basic-info__time, .basic-info__address {
-  opacity: 0;
-  position: relative;
-  -webkit-animation: fadeInMoveUp 1.0s ease-in-out;
-          animation: fadeInMoveUp 1.0s ease-in-out;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-@-webkit-keyframes fadeInMoveUp {
-  0% {
-    opacity: 0;
-    top: 2rem; }
-  100% {
-    opacity: 1;
-    top: 0; } }
-@keyframes fadeInMoveUp {
-  0% {
-    opacity: 0;
-    top: 2rem; }
-  100% {
-    opacity: 1;
-    top: 0; } }
-.text-block {
-  -webkit-animation: fadeInMoveUp 1.0s ease-in-out;
-          animation: fadeInMoveUp 1.0s ease-in-out;
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-@keyframes fadeInMoveUp {
-  0% {
-    opacity: 0;
-    top: 2rem; }
-  100% {
-    opacity: 1;
-    top: 0; } }
-.block:nth-child(even) {
-  background-color: #fbe8e3; }
-
-@media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 10) {
-  .blocks-list .block {
-    margin-left: 1.5rem; } }
-@media screen and (min-width: 1080px) {
-  .blocks-list .block {
-    margin-left: 1.5rem; } }
-@media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
-  .blocks-list .block {
-    margin-left: 0; } }
-@media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
-  .blocks-list .block {
-    margin-left: 1.5rem; } }
-@media screen and (min-width: 1460px) {
-  .blocks-list .block {
-    margin-left: 1.5rem; } }

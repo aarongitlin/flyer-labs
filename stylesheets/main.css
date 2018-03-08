@@ -578,7 +578,7 @@ p {
   margin: 0 0 0.75em; }
 
 a {
-  color: #1565c0;
+  color: white;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip: ink;
   -webkit-transition: color 150ms ease;
@@ -993,15 +993,12 @@ body {
 
 .vista {
   background-color: #f8d6cd;
-  color: #3D5F75; }
+  color: #3d5f75; }
   .vista.wrapper--go {
     background-color: #fcf0ec; }
-  .vista .header-toolbar {
-    background-color: #fbe8e3; }
-    .vista .header-toolbar__logo {
-      color: #DFAA9C; }
-  .vista .two-columns {
-    background-color: #f8d6cd; }
+  .vista .header-toolbar__logo {
+    opacity: 0;
+    color: #DFAA9C; }
   .vista .basic-info__title {
     font-family: Golden Plains;
     font-size: 5rem;
@@ -1038,6 +1035,8 @@ body {
     text-transform: uppercase;
     margin-left: 16.67%;
     margin-top: 2rem; }
+  .vista .basic-info__date a {
+    color: white; }
   .vista .basic-info__time {
     font-family: FuturaLTPRo-book;
     font-weight: 100;
@@ -1057,10 +1056,7 @@ body {
     margin-left: 16.67%;
     margin-top: 0.25rem; }
   .vista .rsvp-button {
-    width: 150px;
-    height: 60px;
-    background-color: #FEF1ED;
-    color: #3D5F75;
+    background-color: #DBF4EA;
     border-radius: 80px;
     -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
@@ -1072,8 +1068,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    z-index: 1; }
   .vista .text-block {
+    opacity: 0;
+    position: relative;
     padding-top: 2rem; }
     .vista .text-block__title {
       font-family: Golden Plains;
@@ -1122,3 +1121,181 @@ body {
               align-items: center;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
+
+.vista .two-columns {
+  -webkit-animation: fadeBGColorIn 1.25s ease-in-out;
+          animation: fadeBGColorIn 1.25s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes fadeBGColorIn {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #f8d6cd; } }
+@keyframes fadeBGColorIn {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #f8d6cd; } }
+.header-toolbar {
+  -webkit-animation: fadeToolbarBGIn 1.25s ease-in-out;
+          animation: fadeToolbarBGIn 1.25s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes fadeToolbarBGIn {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #fbe8e3; } }
+@keyframes fadeToolbarBGIn {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #fbe8e3; } }
+[class*="header-toolbar__"] {
+  -webkit-animation: fadeIn 1.25s ease-in-out;
+          animation: fadeIn 1.25s ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.media-wrapper {
+  opacity: 0;
+  -webkit-animation-name: fadeIn, moveInFromLeft;
+          animation-name: fadeIn, moveInFromLeft;
+  -webkit-animation-duration: 0.85s, 0.85s;
+          animation-duration: 0.85s, 0.85s;
+  -webkit-animation-timing-function: ease-in-out, ease-in-out;
+          animation-timing-function: ease-in-out, ease-in-out;
+  -webkit-animation-delay: 0.75s, 0.75s;
+          animation-delay: 0.75s, 0.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes moveInFromLeft {
+  0% {
+    right: 1rem; }
+  100% {
+    right: 0rem; } }
+@keyframes moveInFromLeft {
+  0% {
+    right: 1rem; }
+  100% {
+    right: 0rem; } }
+.basic-info__title {
+  opacity: 0;
+  position: relative;
+  -webkit-animation-name: fadeIn, moveInFromLeft;
+          animation-name: fadeIn, moveInFromLeft;
+  -webkit-animation-duration: 0.75s, 0.75s;
+          animation-duration: 0.75s, 0.75s;
+  -webkit-animation-timing-function: ease-in-out, ease-in-out;
+          animation-timing-function: ease-in-out, ease-in-out;
+  -webkit-animation-delay: 1s, 1s;
+          animation-delay: 1s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes moveInFromLeft {
+  0% {
+    right: 1rem; }
+  100% {
+    right: 0rem; } }
+.rsvp-button {
+  width: 60px;
+  height: 60px;
+  left: 2rem;
+  color: rgba(61, 95, 117, 0);
+  -webkit-animation-name: moveButton, buttonOpen, buttonTextColor;
+          animation-name: moveButton, buttonOpen, buttonTextColor;
+  -webkit-animation-duration: 0.25s, 0.65s, 0.5s;
+          animation-duration: 0.25s, 0.65s, 0.5s;
+  -webkit-animation-delay: 1s, 1.1s, 1.65s;
+          animation-delay: 1s, 1.1s, 1.65s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes buttonOpen {
+  0% {
+    width: 60px; }
+  100% {
+    width: 150px; } }
+@keyframes buttonOpen {
+  0% {
+    width: 60px; }
+  100% {
+    width: 150px; } }
+@-webkit-keyframes moveButton {
+  0% {
+    left: 2rem; }
+  100% {
+    left: 3rem; } }
+@keyframes moveButton {
+  0% {
+    left: 2rem; }
+  100% {
+    left: 3rem; } }
+@-webkit-keyframes buttonTextColor {
+  0% {
+    color: rgba(61, 95, 117, 0); }
+  100% {
+    color: #3d5f75; } }
+@keyframes buttonTextColor {
+  0% {
+    color: rgba(61, 95, 117, 0); }
+  100% {
+    color: #3d5f75; } }
+.basic-info__host, .basic-info__short-description, .basic-info__date, .basic-info__time, .basic-info__address {
+  opacity: 0;
+  position: relative;
+  -webkit-animation: fadeInMoveUp 1.0s ease-in-out;
+          animation: fadeInMoveUp 1.0s ease-in-out;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    top: 2rem; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    top: 2rem; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+.text-block {
+  -webkit-animation: fadeInMoveUp 1.0s ease-in-out;
+          animation: fadeInMoveUp 1.0s ease-in-out;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    top: 2rem; }
+  100% {
+    opacity: 1;
+    top: 0; } }

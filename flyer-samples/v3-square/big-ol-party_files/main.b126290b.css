@@ -1572,7 +1572,7 @@
     text-transform:uppercase
 }
 .style-sloane .basic-info__address:hover{
-    text-decoration:underline
+    text-decoration: underline;
 }
 .style-sloane .basic-info__actions{
     display:none
@@ -1786,13 +1786,13 @@
     line-height:24px;
     margin-bottom:1rem;
     text-align:center;
-    text-transform:uppercase
+    text-transform:uppercase;
 }
 .style-sloane-blue .basic-info__address:hover{
-    text-decoration:underline
+    text-decoration:underline;
 }
 .style-sloane-blue .basic-info__actions{
-    display:none
+    display:none;
 }
 @media (min-width:787px){
     .style-sloane-blue .basic-info__title{
@@ -2011,7 +2011,8 @@
     text-transform:uppercase
 }
 .style-vista .basic-info__address-link{
-    text-decoration:underline
+    text-decoration:underline;
+    color:white;
 }
 .style-vista .basic-info__actions{
     display:none
@@ -2084,7 +2085,7 @@
 }
 .style-vista .guest-list__view-all-link{
     letter-spacing:1px;
-    text-decoration:underline
+    text-decoration:underline;
 }
 @media (min-width:787px){
     .style-vista .guest-list__title{
@@ -2401,7 +2402,7 @@
     text-transform:uppercase
 }
 .style-vista-black .basic-info__address-link{
-    text-decoration:underline
+    text-decoration:underline;
 }
 .style-vista-black .basic-info__actions{
     display:none
@@ -2478,7 +2479,7 @@
 }
 .style-vista-black .guest-list__view-all-link{
     letter-spacing:1px;
-    text-decoration:underline
+    text-decoration:underline;
 }
 @media (min-width:787px){
     .style-vista-black .guest-list__title{
@@ -3062,7 +3063,7 @@
     margin:4.5rem 0 1rem
 }
 .pages-404-page__support-link{
-    text-decoration:underline
+    text-decoration:underline;
 }
 @media (min-width:787px){
     .pages-404-page__background-svg{
