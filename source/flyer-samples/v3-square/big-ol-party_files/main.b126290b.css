@@ -1515,7 +1515,7 @@
     text-transform:uppercase
 }
 .style-sloane .basic-info__address:hover{
-    text-decoration:underline
+    text-decoration: underline;
 }
 .style-sloane .basic-info__actions{
     display:none
