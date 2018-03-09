@@ -165,6 +165,8 @@
   }
 
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/10) {
+    background-position-x: 50%;
+    background-position-y: 50%;
     background-size: 92%;
     background-color: lighten($background-color, 7%);
   }
@@ -204,6 +206,5 @@
    }
    @media screen and (min-width: 1460px) and (max-aspect-ratio: 16/8) {
       max-width: 58.33vw;
-      background-size: calc(58.33vw - 10rem);
     }
   }
