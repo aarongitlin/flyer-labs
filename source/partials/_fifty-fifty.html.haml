@@ -1,3 +1,9 @@
+// Loading Spinner
+.group
+  .square.first
+  .square.second
+// end loading spinner
+
 - data.event_2.info do |info|
   .wrapper--go{class: "#{info.style.type}"}
     .header-toolbar
@@ -9,7 +15,7 @@
             .primary-media{style: "background-image: url('#{block.info.image_url}')" }
 
       .rsvp-button RSVP
-      
+
       .blocks-list
         .block.basic-info
           - info.event do |event|
@@ -21,7 +27,7 @@
             .basic-info__address
               =link_to event.address.name, "https://www.google.com/maps/place/?q=place_id:ChIJp4JiUCNP0xQR1JaSjpW_Hms"
             / .basic-info__address-link="https://www.google.com/maps/place/?q=place_id:ChIJp4JiUCNP0xQR1JaSjpW_Hms"
-        
+
 
 
         - info.blocks.each do |block|

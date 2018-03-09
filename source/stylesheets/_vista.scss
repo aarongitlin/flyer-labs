@@ -196,7 +196,7 @@ $rsvp-text: $text-color;
     }
   }
 
-// Stage 1 - animate in background color and toolbar BG
+// Stage 1 - animate in background color and toolbar BG, while loader plays
 
 //// background color
 .vista .two-columns {
@@ -218,12 +218,117 @@ $rsvp-text: $text-color;
   }
 }
 
+.group {
+  position: absolute;
+  width: 64px;
+  height: 48px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  line-height: 16px;
+  z-index: 9;
+}
+
+.square {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: rgba(0,0,0,0.2);
+}
+
+.first {
+  left: 0px;
+  top: 0px;
+  // opacity: 0;
+  animation-name: moveSquareOne, fadeSquareOneOut;
+  animation-duration: 1.5s, 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s, 4.5s;
+  animation-iteration-count: 3, 1;
+}
+
+.second {
+  left: 40px;
+  top: 0px;
+  // opacity: 0;
+  animation: moveSquareTwo, fadeSquareTwoOut;
+  animation-duration: 1.5s, 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s, 4.5s;
+  animation-iteration-count: 3, 1;
+}
+
+@keyframes moveSquareOne {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  33% {
+    left: 40px;
+    top: 0;
+  }
+  66% {
+    left: 16px;
+    top: 18px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes fadeSquareOneOut {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    left: -8px;
+    opacity: 0;
+  }
+}
+
+@keyframes moveSquareTwo {
+  0% {
+    left: 40px;
+    top: 0;
+  }
+  33% {
+    left: 0px;
+    top: 0;
+  }
+  66% {
+    left: 16px;
+    top: -18px;
+  }
+  100% {
+    left: 40px;
+    top: 0;
+  }
+}
+
+@keyframes fadeSquareTwoOut {
+  0% {
+    left: 40px;
+    opacity: 1;
+  }
+  100% {
+    left: 48px;
+    opacity: 0;
+  }
+}
+
  // Stage 2 - animate in image, title, toolbar content
 
 //// toolbar content
  [class*="header-toolbar__"] {
    animation: fadeIn 1.25s ease-in-out;
-   animation-delay: 1s;
+   animation-delay: 4.5s;
    animation-fill-mode: forwards;
    @include fadeIn;
  }
@@ -234,7 +339,7 @@ $rsvp-text: $text-color;
   animation-name: fadeIn, moveInFromLeft;
   animation-duration: 0.85s, 0.85s;
   animation-timing-function: ease-in-out, ease-in-out;
-  animation-delay: 0.75s, 0.75s;
+  animation-delay: 5s, 5s;
   animation-fill-mode: forwards;
   @include fadeIn;
   @include moveInFromLeft;
@@ -247,7 +352,7 @@ $rsvp-text: $text-color;
   animation-name: fadeIn, moveInFromLeft;
   animation-duration: 0.75s, 0.75s;
   animation-timing-function: ease-in-out, ease-in-out;
-  animation-delay: 1s, 1s;
+  animation-delay: 5.5s, 5.5s;
   animation-fill-mode: forwards;
   @include fadeIn;
   @include moveInFromLeft;
@@ -260,7 +365,7 @@ $rsvp-text: $text-color;
   color: rgba($rsvp-text, 0);
   animation-name: moveButton, buttonOpen, buttonTextColor;
   animation-duration: 0.25s, 0.65s, 0.5s;
-  animation-delay: 1s, 1.1s, 1.65s;
+  animation-delay: 5s, 5.1s, 5.65s;
   animation-fill-mode: forwards;
   @keyframes buttonOpen {
     0% { width: 60px; }
@@ -281,14 +386,14 @@ $rsvp-text: $text-color;
   opacity: 0;
   position: relative;
   animation: fadeInMoveUp 1.0s ease-in-out;
-  animation-delay: 1.5s;
+  animation-delay: 5.5s;
   animation-fill-mode: forwards;
   @include fadeInMoveUp;
   }
 
 .text-block {
   animation: fadeInMoveUp 1.0s ease-in-out;
-  animation-delay: 1.75s;
+  animation-delay: 5.75s;
   animation-fill-mode: forwards;
   @include fadeInMoveUp;
 }
