@@ -870,16 +870,15 @@ body {
     .blocks-list {
       overflow-y: auto;
       margin: 0;
-      width: calc(50% + 6rem); }
+      width: 50%; }
       .blocks-list .block {
         padding: 2rem 8% 2rem 8%;
         padding-right: calc(8% + 6rem); } }
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
     .blocks-list {
-      width: calc(41.67% + 6rem); }
+      width: 41.67%; }
       .blocks-list .block {
-        padding: 2rem 12% 2rem 8%;
-        padding-right: calc(12% + 6rem); } }
+        padding: 2rem 12% 2rem 8%; } }
   @media screen and (min-width: 1080px) {
     .blocks-list {
       width: 50%; }
@@ -887,10 +886,9 @@ body {
         padding: 2rem 12% 2rem 12%; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
     .blocks-list {
-      width: calc(50% + 12rem); }
+      width: 50%; }
       .blocks-list .block {
-        padding: 2rem 16% 2rem 8%;
-        padding-right: calc(16% + 12rem); } }
+        padding: 2rem 16% 2rem 8%; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
     .blocks-list {
       width: 41.67%; }
@@ -1005,7 +1003,8 @@ body {
     line-height: 6rem;
     margin-bottom: 2rem;
     font-size: 6rem;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    text-align: center; }
     @media screen and (min-width: 780px) {
       .vista .basic-info__title {
         margin-top: 4rem; } }
@@ -1078,7 +1077,8 @@ body {
       font-family: Golden Plains;
       font-size: 5rem;
       line-height: 6rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-align: center; }
     .vista .text-block__text {
       font-family: FuturaLTPRo-book;
       font-weight: 100;
@@ -1092,7 +1092,8 @@ body {
       font-family: Golden Plains;
       font-size: 5rem;
       line-height: 6rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-align: center; }
     .vista .guestlist__guests {
       font-family: FuturaLTPRo-book;
       font-weight: 100;

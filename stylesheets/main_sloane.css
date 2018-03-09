@@ -870,16 +870,15 @@ body {
     .blocks-list {
       overflow-y: auto;
       margin: 0;
-      width: calc(50% + 6rem); }
+      width: 50%; }
       .blocks-list .block {
         padding: 2rem 8% 2rem 8%;
         padding-right: calc(8% + 6rem); } }
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
     .blocks-list {
-      width: calc(41.67% + 6rem); }
+      width: 41.67%; }
       .blocks-list .block {
-        padding: 2rem 12% 2rem 8%;
-        padding-right: calc(12% + 6rem); } }
+        padding: 2rem 12% 2rem 8%; } }
   @media screen and (min-width: 1080px) {
     .blocks-list {
       width: 50%; }
@@ -887,10 +886,9 @@ body {
         padding: 2rem 12% 2rem 12%; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
     .blocks-list {
-      width: calc(50% + 12rem); }
+      width: 50%; }
       .blocks-list .block {
-        padding: 2rem 16% 2rem 8%;
-        padding-right: calc(16% + 12rem); } }
+        padding: 2rem 16% 2rem 8%; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
     .blocks-list {
       width: 41.67%; }
@@ -1367,7 +1365,8 @@ body {
   -webkit-animation-delay: 5s, 5s;
           animation-delay: 5s, 5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
+          animation-fill-mode: forwards;
+  z-index: 2; }
 @keyframes fadeIn {
   from {
     opacity: 0; }
@@ -1472,7 +1471,8 @@ body {
   100% {
     opacity: 1;
     top: 0; } }
-.text-block {
+.block {
+  opacity: 0;
   -webkit-animation: fadeInMoveUp 1.0s ease-in-out;
           animation: fadeInMoveUp 1.0s ease-in-out;
   -webkit-animation-delay: 5.75s;

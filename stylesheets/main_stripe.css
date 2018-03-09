@@ -794,16 +794,15 @@ body {
     .blocks-list {
       overflow-y: auto;
       margin: 0;
-      width: calc(50% + 6rem); }
+      width: 50%; }
       .blocks-list .block {
         padding: 2rem 8% 2rem 8%;
         padding-right: calc(8% + 6rem); } }
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
     .blocks-list {
-      width: calc(41.67% + 6rem); }
+      width: 41.67%; }
       .blocks-list .block {
-        padding: 2rem 12% 2rem 8%;
-        padding-right: calc(12% + 6rem); } }
+        padding: 2rem 12% 2rem 8%; } }
   @media screen and (min-width: 1080px) {
     .blocks-list {
       width: 50%; }
@@ -811,10 +810,9 @@ body {
         padding: 2rem 12% 2rem 12%; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
     .blocks-list {
-      width: calc(50% + 12rem); }
+      width: 50%; }
       .blocks-list .block {
-        padding: 2rem 16% 2rem 8%;
-        padding-right: calc(16% + 12rem); } }
+        padding: 2rem 16% 2rem 8%; } }
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
     .blocks-list {
       width: 41.67%; }
@@ -929,7 +927,8 @@ body {
     line-height: 6rem;
     margin-bottom: 2rem;
     font-size: 6rem;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    text-align: center; }
     @media screen and (min-width: 780px) {
       .vista .basic-info__title {
         margin-top: 4rem; } }
@@ -1002,7 +1001,8 @@ body {
       font-family: Golden Plains;
       font-size: 5rem;
       line-height: 6rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-align: center; }
     .vista .text-block__text {
       font-family: FuturaLTPRo-book;
       font-weight: 100;
@@ -1016,7 +1016,8 @@ body {
       font-family: Golden Plains;
       font-size: 5rem;
       line-height: 6rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-align: center; }
     .vista .guestlist__guests {
       font-family: FuturaLTPRo-book;
       font-weight: 100;
@@ -1367,18 +1368,154 @@ body {
 .block:nth-child(even) {
   background-color: #fbe8e3; }
 
-@media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 10) {
-  .blocks-list .block {
-    margin-left: 1.5rem; } }
+.vista.wrapper--go {
+  background-color: #f8d6cd; }
+
+.two-columns {
+  width: 100%; }
+  @media screen and (min-width: 1460px) {
+    .two-columns {
+      max-width: none;
+      margin: auto;
+      position: relative; } }
+
+@media screen and (min-width: 780px) {
+  .blocks-list {
+    width: calc(50% + 6rem); }
+    .blocks-list .block {
+      padding-right: calc(8% + 6rem); } }
+@media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
+  .blocks-list {
+    width: calc(41.67% + 6rem); }
+    .blocks-list .block {
+      padding-right: calc(12% + 6rem); } }
 @media screen and (min-width: 1080px) {
-  .blocks-list .block {
-    margin-left: 1.5rem; } }
+  .blocks-list {
+    width: 50%; }
+    .blocks-list .block {
+      padding: 2rem 12% 2rem 12%; } }
 @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
-  .blocks-list .block {
-    margin-left: 0; } }
+  .blocks-list {
+    width: calc(50% + 12rem); }
+    .blocks-list .block {
+      padding-right: calc(16% + 12rem); } }
 @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
-  .blocks-list .block {
-    margin-left: 1.5rem; } }
+  .blocks-list {
+    width: 41.67%; }
+    .blocks-list .block {
+      padding-right: 16%; } }
 @media screen and (min-width: 1460px) {
-  .blocks-list .block {
-    margin-left: 1.5rem; } }
+  .blocks-list {
+    margin: auto; } }
+@media screen and (min-width: 1460px) and (max-aspect-ratio: 16 / 8) {
+  .blocks-list {
+    width: 41.67%; }
+    .blocks-list .block {
+      padding: 2rem 8% 1.5rem 8%; } }
+
+.media-wrapper {
+  position: relative;
+  top: 0;
+  z-index: 1; }
+  @media screen and (min-width: 540px) {
+    .media-wrapper {
+      width: 100%;
+      padding: 4% 8% 0 8%;
+      margin: auto; } }
+  @media screen and (min-width: 780px) {
+    .media-wrapper {
+      position: fixed;
+      padding: 0;
+      top: 4rem;
+      right: 0;
+      height: calc(100vh - 4rem);
+      width: auto;
+      display: -webkit-box;
+      min-height: 450px; } }
+  @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
+    .media-wrapper {
+      width: auto;
+      padding: 0; } }
+  @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 10) {
+    .media-wrapper {
+      padding: 2rem;
+      background-color: #fcf0ec; } }
+  @media screen and (min-width: 1080px) {
+    .media-wrapper {
+      padding: 1.5rem;
+      width: auto;
+      min-height: 540px;
+      background-color: #fcf0ec; } }
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
+    .media-wrapper {
+      padding: 0;
+      width: auto;
+      background-color: #f8d6cd; } }
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
+    .media-wrapper {
+      padding: 2rem;
+      min-height: 0;
+      background-color: #fcf0ec; } }
+  @media screen and (min-width: 1460px) {
+    .media-wrapper {
+      width: 50%;
+      height: 100vh;
+      float: right;
+      position: -webkit-sticky;
+      position: sticky;
+      padding: 0;
+      min-height: 672px;
+      background-color: #fcf0ec; } }
+  @media screen and (min-width: 1460px) and (max-aspect-ratio: 16 / 8) {
+    .media-wrapper {
+      width: 58.33%; } }
+
+@media screen and (min-width: 780px) {
+  .primary-media {
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - 4rem);
+    max-width: 58.33vw;
+    background-position-x: 100%;
+    min-height: 450px; } }
+@media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
+  .primary-media {
+    max-width: 58.33vw; } }
+@media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 10) {
+  .primary-media {
+    background-size: 92%;
+    background-color: #fcf0ec; } }
+@media screen and (min-width: 1080px) {
+  .primary-media {
+    min-height: 540px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    max-width: 50vw;
+    background-color: #fcf0ec; } }
+@media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
+  .primary-media {
+    background-position-x: 100%;
+    background-position-y: 100%;
+    max-width: 58.33vw;
+    background-color: transparent;
+    background-size: contain; } }
+@media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 10) {
+  .primary-media {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 92%;
+    background-color: #fcf0ec; } }
+@media screen and (min-width: 1460px) {
+  .primary-media {
+    min-height: 672px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    max-width: 50vw;
+    background-color: #fcf0ec;
+    background-size: calc(50vw - 6rem); } }
+@media screen and (min-width: 1460px) and (max-aspect-ratio: 16 / 8) {
+  .primary-media {
+    max-width: 58.33vw;
+    background-size: calc(58.33vw - 10rem); } }
