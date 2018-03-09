@@ -1060,8 +1060,22 @@ body {
   bottom: 0;
   display: inline-block;
   line-height: 16px;
-  z-index: 9; }
-
+  z-index: 9;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.75s ease-in-out;
+          animation: fadeIn 0.75s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .square {
   position: absolute;
   width: 32px;
@@ -1188,11 +1202,6 @@ body {
           animation-delay: 4.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 @keyframes fadeIn {
   from {
     opacity: 0; }
