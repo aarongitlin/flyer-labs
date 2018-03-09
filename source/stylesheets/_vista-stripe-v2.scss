@@ -1,56 +1,19 @@
-// The below works as follows
-// Mobile view, the media is full width. Single column content
-// Tablet portrait view (540px-769px), the media is 85% width with equal space around. Single column content
-// Small desktop view (780-1079px)
-//   Shorter than 12:7 is a 5col-7col content-media split, media is full width and height, min-height 480px
-//   12:7 and taller is same split, but media is 'floated'
-// Medium desktop view (1080-1399px)
-//   Shorter than 12:7 is same as above, but with a min-height of 540px
-//   12:7 and taller, it becomes a 50-50 split and media is 'floated'
-// Large desktop view (1400px+)
-//   layout is adjusted to a max-width of 1380, media has min-heigh of 690
-//   media is floated to the right of container, not browser at all heights
-
-.header-toolbar {
-  height: 4rem;
-  position: relative;
-  @media screen and (min-width: 780px) {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    &__logo {
-      text-transform: uppercase;
-      font-size: 14px;
-      padding-top: 1.2rem;
-      padding-left: 1rem;
-      font-weight: bold;
-      letter-spacing: 4px;
-    }
-  }
-  @media screen and (min-width: 1460px) {
-    // in case we want to contain the header too
-    // width: 1440px;
-    // left: 50%;
-    // margin-left: -720px;
-  }
+// Color striping
+.block:nth-child(even) {
+  background-color: $background-color-alt;
 }
 
-.rsvp-button {
-  position: fixed;
-  left: 3rem;
-  bottom: 3rem;
-}
-
-.wrapper--go { // to extend to full height of screen
-  height: auto;
-  min-height: 100%;
+.vista {
+  &.wrapper--go {
+    background-color: $background-color;
+  }
 }
 
 .two-columns {
   width: 100%;
   // at large screens create max-width
   @media screen and (min-width: 1460px) {
-    max-width: 1440px;
+    max-width: none;
     margin: auto;
     position: relative;
     //box-shadow: 0 2px 12px rgba(0,0,0,0.15);
@@ -60,36 +23,19 @@
 }
 
 
-
 .blocks-list { // just structural info here
-  // mobile
-  width: auto;
-  margin-top: 1rem;
-  .block {
-    padding: 2rem 1rem 1rem 2rem;
-  }
-  // tablet portrait
-  @media screen and (min-width: 540px) {
-    .block {
-      padding: 2rem 12.5%;
-    }
-  }
-  // short height - small desktop and tablet landscape
-  // text should still be considered mobile style here
+
   @media screen and (min-width: 780px) {
-    overflow-y: auto;
-    margin: 0;
-    width: 50%;
+    width: calc(50% + 6rem); // this random hacky thing is to make the stripes extend to the edge of the image on certain views. don't judge plz.
     .block {
-      padding: 2rem 8% 2rem 8%;
       padding-right: calc(8% + 6rem);
     }
   }
   // taller height small-desktop views
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
-    width: 41.67%;
+    width: calc(41.67% + 6rem);
     .block {
-      padding: 2rem 12% 2rem 8%;
+      padding-right: calc(12% + 6rem);
     }
   }
   // short medium desktop view
@@ -102,9 +48,9 @@
 
   // taller height medium desktop view
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/8) {
-    width: 50%;
+    width: calc(50% + 12rem);
     .block {
-      padding: 2rem 16% 2rem 8%;
+      padding-right: calc(16% + 12rem);
     }
   }
   // large desktops, taller views
@@ -117,10 +63,8 @@
 
   // large desktops
   @media screen and (min-width: 1460px) {
-    width: 50%;
-    display: inline-block;
+    margin: auto;
     .block {
-      padding: 2rem 4% 1.5rem 12%;
     }
   }
   // large desktops, taller views
@@ -130,13 +74,14 @@
       padding: 2rem 8% 1.5rem 8%;
     }
   }
-
 }
+
 
 .media-wrapper {
   //mobile
   position: relative;
   top: 0;
+  z-index: 1;
   @media screen and (min-width: 540px) {
     width: 100%;
     padding: 4% 8% 0 8%;
@@ -149,7 +94,7 @@
     top: 4rem;
     right: 0;
     height: calc(100vh - 4rem);
-    width: 50%;
+    width: auto;
     display: -webkit-box;
     min-height: 450px;
   }
@@ -157,84 +102,108 @@
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
     // padding: 2rem;
     // min-height: 0;
-    width: 58.33%;
+    width: auto;
     padding: 0;
   }
   // tallest short desktop view
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/10) {
-    padding: 1.5rem;
+    padding: 2rem;
+    background-color: lighten($background-color, 7%);
+
   }
   // shorter medium desktop view
   @media screen and (min-width: 1080px) {
     padding: 1.5rem;
-    width: 50%;
+    width: auto;
     min-height: 540px; // This is from the max width at this breakpoint, 1460, at 5/12 columns, a kind of minimum
+    background-color: lighten($background-color, 7%);
   }
   // taller medium desktop view
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/8) {
     padding: 0;
-    width: 58.33%;
+    width: auto;
+    background-color: $background-color;
   }
   //tallest medium desktop view
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/10) {
-    padding: 1.5rem;
+    padding: 2rem;
     min-height: 0;
+    background-color: lighten($background-color, 7%);
   }
   // large desktops
   @media screen and (min-width: 1460px) {
     width: 50%;
-    height: calc(100vh - 4rem);
+    height: 100vh;
     float: right;
     position: sticky;
-    top: 4rem;
-    padding: 1.5rem;
+    padding: 0;
     min-height: 672px; // 1460 divided by 16:7?
+    background-color: lighten($background-color, 7%);
   }
   // large desktops with taller heights
   @media screen and (min-width: 1460px) and (max-aspect-ratio: 16/8) {
     width: 58.33%;
   }
-
 }
+
+
 .primary-media {
-  // mobile
-  width: 100%;
-  height: 0; // weird trick to make bg image behave as inline image
-  padding-top: 100%;
-  background-size: contain;
-  background-position-x: 50%;
-  background-position-y: top;
-  background-repeat:no-repeat;
 
-  // tablet-portrait
-    // no change
-
-  // shorter height small desktop
   @media screen and (min-width: 780px) {
-    background-size: contain;
-    background-repeat:no-repeat;
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - 4rem);
+    max-width: 58.33vw;
     background-position-x: 100%;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-  }
-  // taller height small desktop
-  @media screen and (min-width: 780px) and (max-aspect-ratio: 16/10) {
-    background-position-x: right;
-    background-position-y: top;
+    min-height: 450px;
   }
 
-  // medium desktop, shorter views
+  @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
+    max-width: 58.33vw;
+  }
+
+  @media screen and (min-width: 780px) and (max-aspect-ratio: 16/10) {
+    background-size: 92%;
+    background-color: lighten($background-color, 7%);
+  }
+
   @media screen and (min-width: 1080px) {
+    min-height: 540px;
     background-position-x: 50%;
+    background-position-y: 50%;
+    max-width: 50vw;
+    background-color: lighten($background-color, 7%);
+    background-size: calc(100vh - 6rem);
   }
-  // medium desktop, taller views
+
   @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/8) {
-    background-position-x: right;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    max-width: 58.33vw;
+    background-color: transparent;
+    background-size: contain;
   }
+
+  @media screen and (min-width: 1080px) and (max-aspect-ratio: 16/10) {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 92%;
+    background-color: lighten($background-color, 7%);
+  }
+
   // large desktops
    @media screen and (min-width: 1460px) {
-     background-position-x: right;
-     background-position-y: top;
+     min-height: 672px;
+     background-position-x: 50%;
+     background-position-y: 50%;
+     max-width: 50vw;
+     background-color: lighten($background-color, 7%);
+     background-size: calc(50vw - 6rem);
    }
-}
+   @media screen and (min-width: 1460px) and (max-aspect-ratio: 16/8) {
+      max-width: 58.33vw;
+      background-size: calc(58.33vw - 6rem);
+    }
+  }

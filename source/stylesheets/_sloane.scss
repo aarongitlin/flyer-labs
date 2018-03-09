@@ -449,7 +449,8 @@ $rsvp-text: #892645;
   @include fadeInMoveUp;
   }
 
-.text-block {
+.block {
+  opacity: 0;
   animation: fadeInMoveUp 1.0s ease-in-out;
   animation-delay: 5.75s;
   animation-fill-mode: forwards;

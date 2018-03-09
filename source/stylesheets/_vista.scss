@@ -75,6 +75,7 @@ $rsvp-text: $text-color;
     &__title {
       @include page-heading;
       margin-top: 1rem;
+      text-align: center;
       @media screen and (min-width: 780px) {
         margin-top: 4rem;
       }
@@ -134,6 +135,7 @@ $rsvp-text: $text-color;
     padding-top: 2rem;
     &__title {
       @include heading;
+      text-align: center;
     }
     &__text {
       @include text;
@@ -145,6 +147,7 @@ $rsvp-text: $text-color;
     padding-top: 2rem;
     &__title {
       @include heading;
+      text-align: center;
     }
     &__guests {
       @include text;
