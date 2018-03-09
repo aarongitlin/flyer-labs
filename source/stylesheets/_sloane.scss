@@ -400,6 +400,7 @@ $rsvp-text: #892645;
   animation-fill-mode: forwards;
   @include fadeIn;
   @include moveInFromLeft;
+  z-index: 2;
 }
 
 //// Title
