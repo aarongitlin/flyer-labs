@@ -1485,6 +1485,8 @@ body {
     max-width: 58.33vw; } }
 @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 10) {
   .primary-media {
+    background-position-x: 50%;
+    background-position-y: 50%;
     background-size: 92%;
     background-color: #fcf0ec; } }
 @media screen and (min-width: 1080px) {
@@ -1517,5 +1519,4 @@ body {
     background-size: calc(50vw - 6rem); } }
 @media screen and (min-width: 1460px) and (max-aspect-ratio: 16 / 8) {
   .primary-media {
-    max-width: 58.33vw;
-    background-size: calc(58.33vw - 10rem); } }
+    max-width: 58.33vw; } }
