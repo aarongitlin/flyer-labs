@@ -612,6 +612,45 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%; }
 
+@font-face {
+  font-family: Bembo;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/e5488079-e286-434f-a7a2-47bdf487a905.6a09ba8b.eot?#iefix);
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/e5488079-e286-434f-a7a2-47bdf487a905.6a09ba8b.eot?#iefix) format("eot"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/317cdafb-860b-4d5e-aef3-bdbdad1385eb.4c0878c2.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/b30aa007-b477-43cc-81eb-d34f48807cb5.9b963d9b.woff) format("woff"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/f75d5781-c9d6-4a95-b024-72e1ac96a7e1.b6a54458.ttf) format("truetype"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/e8bd1ce0-6a1d-4c97-a49b-3e771cc9d5ec.3b577919.svg#e8bd1ce0-6a1d-4c97-a49b-3e771cc9d5ec) format("svg"); }
+@font-face {
+  font-family: Perpetua Titling;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/e053a71f-f503-47bf-bbe6-6d23cba5c7c8.b25ec3f6.eot?#iefix);
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/e053a71f-f503-47bf-bbe6-6d23cba5c7c8.b25ec3f6.eot?#iefix) format("eot"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/4ad5a9a2-4c98-47bf-8614-0b3b6a8e3817.0171e159.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/a5c23359-e4bd-4fc2-ba85-b2dc80fe5d73.bc2eced9.woff) format("woff"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/540da361-7fcc-4eaa-9950-bf23bb351ec6.84c22200.ttf) format("truetype"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/8a3b585d-fee2-476c-9ea8-6ff029b50482.9b04749d.svg#8a3b585d-fee2-476c-9ea8-6ff029b50482) format("svg"); }
+@font-face {
+  font-family: Trade Gothic Bold Ext;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/97a53a0a-5bd4-4ef3-87fd-13fe60daf933.02cf58a4.eot?#iefix);
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/97a53a0a-5bd4-4ef3-87fd-13fe60daf933.02cf58a4.eot?#iefix) format("eot"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/4bf77dbf-9e1d-4b9c-927f-625e180e9016.ddd5df30.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/3480b7c2-478a-4683-a465-48610e313ad5.af41775f.woff) format("woff"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/bcda37e4-222a-4e9d-8649-61e2085fbe2b.ff6a41e8.ttf) format("truetype"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/12ac2b11-c918-43b2-bbc5-1db249aa4483.7d1b8ab6.svg#12ac2b11-c918-43b2-bbc5-1db249aa4483) format("svg"); }
+@font-face {
+  font-family: Futura Bold;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/87f56fc1-ab05-4355-90af-9e83740663af.6773d76b.eot?#iefix);
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/87f56fc1-ab05-4355-90af-9e83740663af.6773d76b.eot?#iefix) format("eot"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/3cf9e1e8-63a2-497f-86ed-6b63d6de1986.369f7656.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/184895ac-545b-450b-9d3a-c0a0a7620977.6f69fa91.woff) format("woff"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/bf8628d2-1ae0-4645-ba3f-3ce62d8d907c.c72f8f4d.ttf) format("truetype"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/20073de8-56dd-4e4c-9434-5097c3f2fd28.1de170b7.svg#20073de8-56dd-4e4c-9434-5097c3f2fd28) format("svg"); }
+@font-face {
+  font-family: Futura Book;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.98a51fd8.eot?#iefix);
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.98a51fd8.eot?#iefix) format("eot"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/8bf38806-3423-4080-b38f-d08542f7e4ac.eecd612f.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.3d08300b.woff) format("woff"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/c2a69697-4f06-4764-abd4-625031a84e31.cfebb4c6.ttf) format("truetype"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/dc423cc1-bf86-415c-bc7d-ad7dde416a34.3253b495.svg#dc423cc1-bf86-415c-bc7d-ad7dde416a34) format("svg"); }
+@font-face {
+  font-family: Golden Plains;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/golden-plains.0ce7d20d.eot);
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/golden-plains.0ce7d20d.eot?#iefix) format("embedded-opentype"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/golden-plains.10cb1fe2.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/golden-plains.049996bc.woff) format("woff"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/golden-plains.c6475ebc.ttf) format("truetype"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/golden-plains.579a48f8.svg#youworkforthem) format("svg"); }
+@font-face {
+  font-family: Basis Grotesque;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/basis_grotesque_bold-web.1dfc22d8.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/basis_grotesque_bold-web.898df8f5.woff) format("woff");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: Basis Grotesque;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/basis_grotesque_medium-web.2ca547ac.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/basis_grotesque_medium-web.f175c929.woff) format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: Basis Grotesque;
+  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/basis_grotesque_regular-web.7a9ef722.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/basis_grotesque_regular-web.af6d1c9f.woff) format("woff");
+  font-weight: 400;
+  font-style: normal; }
 .pages-rounded-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -952,21 +991,6 @@ body {
       background-position-x: right;
       background-position-y: top; } }
 
-@font-face {
-  font-family: Perpetua Titling;
-  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/4ad5a9a2-4c98-47bf-8614-0b3b6a8e3817.0171e159.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/a5c23359-e4bd-4fc2-ba85-b2dc80fe5d73.bc2eced9.woff) format("woff");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: Bembo;
-  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/317cdafb-860b-4d5e-aef3-bdbdad1385eb.4c0878c2.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/b30aa007-b477-43cc-81eb-d34f48807cb5.9b963d9b.woff) format("woff");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: Trade Gothic Bold Ext;
-  src: url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/4bf77dbf-9e1d-4b9c-927f-625e180e9016.ddd5df30.woff2) format("woff2"), url(https://s3.amazonaws.com/pages-frontend-assets/pages-react-viewer/static/media/3480b7c2-478a-4683-a465-48610e313ad5.af41775f.woff) format("woff");
-  font-style: normal;
-  font-weight: normal; }
 .vista {
   background-color: #ede4de;
   color: #38501e; }
@@ -978,8 +1002,23 @@ body {
       color: #7d7a78; }
   .vista .two-columns {
     background-color: #ede4de; }
+  .vista .block {
+    position: relative; }
+    .vista .block:nth-child(-n+2):after {
+      background-color: #892645;
+      height: 5px;
+      width: 5px;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      left: calc(50% - 2.5px);
+      margin-top: 7rem; }
+      @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
+        .vista .block:nth-child(-n+2):after {
+          left: calc(35% - 2.5px); } }
   .vista .basic-info {
-    margin-top: 64px; }
+    margin-top: 4rem;
+    margin-bottom: 8rem; }
     .vista .basic-info__title {
       font-family: Perpetua Titling;
       font-size: 3rem;
@@ -1042,15 +1081,13 @@ body {
       text-transform: uppercase;
       text-align: center;
       letter-spacing: 0.25rem;
-      margin-top: 0.25rem;
-      margin-bottom: 5rem; }
+      margin-top: 0.25rem; }
     .vista .basic-info__address a {
       color: #38501e; }
   .vista .rsvp-button {
-    width: 153px;
+    width: 60px;
     height: 60px;
     background-color: #f9f1ea;
-    color: #892645;
     -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
     display: inline-block;
@@ -1066,10 +1103,11 @@ body {
     text-indent: 12px;
     position: fixed;
     left: 1.25rem;
-    bottom: 1.25rem; }
+    bottom: 1.25rem;
+    z-index: 1; }
   .vista .text-block {
     padding-top: 2rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 8rem; }
     .vista .text-block__title {
       font-family: Perpetua Titling;
       font-size: 3rem;
@@ -1109,7 +1147,9 @@ body {
         display: inline-block;
         width: 50%; }
   .vista .footer {
-    padding: 4rem auto 2rem auto; }
+    padding: 4rem auto 2rem auto;
+    border-top: 1px solid #38501e;
+    z-index: 0; }
     .vista .footer__logo {
       width: 8rem;
       display: block;
@@ -1127,3 +1167,322 @@ body {
               align-items: center;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
+
+.vista .two-columns {
+  -webkit-animation: fadeBGColorIn 1.25s ease-in-out;
+          animation: fadeBGColorIn 1.25s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes fadeBGColorIn {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ede4de; } }
+@keyframes fadeBGColorIn {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ede4de; } }
+.header-toolbar {
+  -webkit-animation: fadeToolbarBGIn 1.25s ease-in-out;
+          animation: fadeToolbarBGIn 1.25s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes fadeToolbarBGIn {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #cdc6bf; } }
+@keyframes fadeToolbarBGIn {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #cdc6bf; } }
+.group {
+  position: absolute;
+  width: 64px;
+  height: 48px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  line-height: 16px;
+  z-index: 9;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.75s ease-in-out;
+          animation: fadeIn 0.75s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.square {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.first {
+  left: 0px;
+  top: 0px;
+  -webkit-animation-name: moveSquareOne, fadeSquareOneOut;
+          animation-name: moveSquareOne, fadeSquareOneOut;
+  -webkit-animation-duration: 1.5s, 0.5s;
+          animation-duration: 1.5s, 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s, 4.5s;
+          animation-delay: 0s, 4.5s;
+  -webkit-animation-iteration-count: 3, 1;
+          animation-iteration-count: 3, 1; }
+
+.second {
+  left: 40px;
+  top: 0px;
+  -webkit-animation: moveSquareTwo, fadeSquareTwoOut;
+          animation: moveSquareTwo, fadeSquareTwoOut;
+  -webkit-animation-duration: 1.5s, 0.5s;
+          animation-duration: 1.5s, 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s, 4.5s;
+          animation-delay: 0s, 4.5s;
+  -webkit-animation-iteration-count: 3, 1;
+          animation-iteration-count: 3, 1; }
+
+@-webkit-keyframes moveSquareOne {
+  0% {
+    left: 0;
+    top: 0; }
+  33% {
+    left: 40px;
+    top: 0; }
+  66% {
+    left: 16px;
+    top: 18px; }
+  100% {
+    left: 0;
+    top: 0; } }
+
+@keyframes moveSquareOne {
+  0% {
+    left: 0;
+    top: 0; }
+  33% {
+    left: 40px;
+    top: 0; }
+  66% {
+    left: 16px;
+    top: 18px; }
+  100% {
+    left: 0;
+    top: 0; } }
+@-webkit-keyframes fadeSquareOneOut {
+  0% {
+    left: 0;
+    opacity: 1; }
+  100% {
+    left: -8px;
+    opacity: 0; } }
+@keyframes fadeSquareOneOut {
+  0% {
+    left: 0;
+    opacity: 1; }
+  100% {
+    left: -8px;
+    opacity: 0; } }
+@-webkit-keyframes moveSquareTwo {
+  0% {
+    left: 40px;
+    top: 0; }
+  33% {
+    left: 0px;
+    top: 0; }
+  66% {
+    left: 16px;
+    top: -18px; }
+  100% {
+    left: 40px;
+    top: 0; } }
+@keyframes moveSquareTwo {
+  0% {
+    left: 40px;
+    top: 0; }
+  33% {
+    left: 0px;
+    top: 0; }
+  66% {
+    left: 16px;
+    top: -18px; }
+  100% {
+    left: 40px;
+    top: 0; } }
+@-webkit-keyframes fadeSquareTwoOut {
+  0% {
+    left: 40px;
+    opacity: 1; }
+  100% {
+    left: 48px;
+    opacity: 0; } }
+@keyframes fadeSquareTwoOut {
+  0% {
+    left: 40px;
+    opacity: 1; }
+  100% {
+    left: 48px;
+    opacity: 0; } }
+[class*="header-toolbar__"] {
+  -webkit-animation: fadeIn 1.25s ease-in-out;
+          animation: fadeIn 1.25s ease-in-out;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.media-wrapper {
+  opacity: 0;
+  -webkit-animation-name: fadeIn, moveInFromLeft;
+          animation-name: fadeIn, moveInFromLeft;
+  -webkit-animation-duration: 0.85s, 0.85s;
+          animation-duration: 0.85s, 0.85s;
+  -webkit-animation-timing-function: ease-in-out, ease-in-out;
+          animation-timing-function: ease-in-out, ease-in-out;
+  -webkit-animation-delay: 5s, 5s;
+          animation-delay: 5s, 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes moveInFromLeft {
+  0% {
+    right: 1rem; }
+  100% {
+    right: 0rem; } }
+@keyframes moveInFromLeft {
+  0% {
+    right: 1rem; }
+  100% {
+    right: 0rem; } }
+.basic-info__title {
+  opacity: 0;
+  position: relative;
+  -webkit-animation-name: fadeIn, moveInFromLeft;
+          animation-name: fadeIn, moveInFromLeft;
+  -webkit-animation-duration: 0.75s, 0.75s;
+          animation-duration: 0.75s, 0.75s;
+  -webkit-animation-timing-function: ease-in-out, ease-in-out;
+          animation-timing-function: ease-in-out, ease-in-out;
+  -webkit-animation-delay: 5.5s, 5.5s;
+          animation-delay: 5.5s, 5.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes moveInFromLeft {
+  0% {
+    right: 1rem; }
+  100% {
+    right: 0rem; } }
+.rsvp-button {
+  width: 60px;
+  height: 60px;
+  left: 2rem;
+  color: rgba(137, 38, 69, 0);
+  -webkit-animation-name: moveButton, buttonOpen, buttonTextColor;
+          animation-name: moveButton, buttonOpen, buttonTextColor;
+  -webkit-animation-duration: 0.25s, 0.65s, 0.5s;
+          animation-duration: 0.25s, 0.65s, 0.5s;
+  -webkit-animation-delay: 5s, 5.1s, 5.65s;
+          animation-delay: 5s, 5.1s, 5.65s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes buttonOpen {
+  0% {
+    width: 60px; }
+  100% {
+    width: 150px; } }
+@keyframes buttonOpen {
+  0% {
+    width: 60px; }
+  100% {
+    width: 150px; } }
+@-webkit-keyframes moveButton {
+  0% {
+    left: 2rem; }
+  100% {
+    left: 3rem; } }
+@keyframes moveButton {
+  0% {
+    left: 2rem; }
+  100% {
+    left: 3rem; } }
+@-webkit-keyframes buttonTextColor {
+  0% {
+    color: rgba(137, 38, 69, 0); }
+  100% {
+    color: #892645; } }
+@keyframes buttonTextColor {
+  0% {
+    color: rgba(137, 38, 69, 0); }
+  100% {
+    color: #892645; } }
+.basic-info__host, .basic-info__short-description, .basic-info__date, .basic-info__time, .basic-info__address {
+  opacity: 0;
+  position: relative;
+  -webkit-animation: fadeInMoveUp 1.0s ease-in-out;
+          animation: fadeInMoveUp 1.0s ease-in-out;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@-webkit-keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    top: 2rem; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    top: 2rem; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+.text-block {
+  -webkit-animation: fadeInMoveUp 1.0s ease-in-out;
+          animation: fadeInMoveUp 1.0s ease-in-out;
+  -webkit-animation-delay: 5.75s;
+          animation-delay: 5.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    top: 2rem; }
+  100% {
+    opacity: 1;
+    top: 0; } }
