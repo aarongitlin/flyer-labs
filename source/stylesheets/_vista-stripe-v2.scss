@@ -131,17 +131,20 @@
     background-color: lighten($background-color, 7%);
   }
   // large desktops
-  @media screen and (min-width: 1460px) {
+  @media screen and (min-width: 1680px) {
     width: 50%;
-    height: 100vh;
+    height: calc(100vh - 4rem);
+    margin-top: 4rem;
     float: right;
-    position: sticky;
-    padding: 0;
+    position: relative;
+    padding: 2rem;
     min-height: 672px; // 1460 divided by 16:7?
     background-color: lighten($background-color, 7%);
+    background-size: contain;
+    top: 0;
   }
   // large desktops with taller heights
-  @media screen and (min-width: 1460px) and (max-aspect-ratio: 16/8) {
+  @media screen and (min-width: 1680px) and (max-aspect-ratio: 16/8) {
     width: 58.33%;
   }
 }
@@ -155,13 +158,15 @@
     right: 0;
     bottom: 0;
     height: calc(100vh - 4rem);
-    max-width: 58.33vw;
+    max-width: 50vw;
     background-position-x: 100%;
     min-height: 450px;
+    background-size: cover;
   }
 
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/9) {
     max-width: 58.33vw;
+    background-size: contain;
   }
 
   @media screen and (min-width: 780px) and (max-aspect-ratio: 16/10) {
@@ -177,6 +182,7 @@
     background-position-y: 50%;
     max-width: 50vw;
     background-color: lighten($background-color, 7%);
+    background-size: cover;
     //background-size: calc(100vh - 6rem);
   }
 
@@ -196,15 +202,20 @@
   }
 
   // large desktops
-   @media screen and (min-width: 1460px) {
+   @media screen and (min-width: 1680px) {
      min-height: 672px;
      background-position-x: 50%;
      background-position-y: 50%;
      max-width: 50vw;
      background-color: lighten($background-color, 7%);
-     background-size: calc(50vw - 6rem);
+     background-size: contain;
+     position: sticky;
+     right: auto;
+     bottom: auto;
+     height: auto;
    }
-   @media screen and (min-width: 1460px) and (max-aspect-ratio: 16/8) {
-      max-width: 58.33vw;
+   @media screen and (min-width: 1680px) and (max-aspect-ratio: 16/8) {
+      width: 85%;
+      margin: auto;
     }
   }
