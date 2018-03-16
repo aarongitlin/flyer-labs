@@ -1456,17 +1456,19 @@ body {
       padding: 2rem;
       min-height: 0;
       background-color: #fcf0ec; } }
-  @media screen and (min-width: 1460px) {
+  @media screen and (min-width: 1680px) {
     .media-wrapper {
       width: 50%;
-      height: 100vh;
+      height: calc(100vh - 4rem);
+      margin-top: 4rem;
       float: right;
-      position: -webkit-sticky;
-      position: sticky;
-      padding: 0;
+      position: relative;
+      padding: 2rem;
       min-height: 672px;
-      background-color: #fcf0ec; } }
-  @media screen and (min-width: 1460px) and (max-aspect-ratio: 16 / 8) {
+      background-color: #fcf0ec;
+      background-size: contain;
+      top: 0; } }
+  @media screen and (min-width: 1680px) and (max-aspect-ratio: 16 / 8) {
     .media-wrapper {
       width: 58.33%; } }
 
@@ -1477,12 +1479,14 @@ body {
     right: 0;
     bottom: 0;
     height: calc(100vh - 4rem);
-    max-width: 58.33vw;
+    max-width: 50vw;
     background-position-x: 100%;
-    min-height: 450px; } }
+    min-height: 450px;
+    background-size: cover; } }
 @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 9) {
   .primary-media {
-    max-width: 58.33vw; } }
+    max-width: 58.33vw;
+    background-size: contain; } }
 @media screen and (min-width: 780px) and (max-aspect-ratio: 16 / 10) {
   .primary-media {
     background-position-x: 50%;
@@ -1495,7 +1499,8 @@ body {
     background-position-x: 50%;
     background-position-y: 50%;
     max-width: 50vw;
-    background-color: #fcf0ec; } }
+    background-color: #fcf0ec;
+    background-size: cover; } }
 @media screen and (min-width: 1080px) and (max-aspect-ratio: 16 / 8) {
   .primary-media {
     background-position-x: 100%;
@@ -1509,14 +1514,20 @@ body {
     background-position-y: 50%;
     background-size: 92%;
     background-color: #fcf0ec; } }
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1680px) {
   .primary-media {
     min-height: 672px;
     background-position-x: 50%;
     background-position-y: 50%;
     max-width: 50vw;
     background-color: #fcf0ec;
-    background-size: calc(50vw - 6rem); } }
-@media screen and (min-width: 1460px) and (max-aspect-ratio: 16 / 8) {
+    background-size: contain;
+    position: -webkit-sticky;
+    position: sticky;
+    right: auto;
+    bottom: auto;
+    height: auto; } }
+@media screen and (min-width: 1680px) and (max-aspect-ratio: 16 / 8) {
   .primary-media {
-    max-width: 58.33vw; } }
+    width: 85%;
+    margin: auto; } }
