@@ -1,0 +1,106 @@
+// The below works as follows
+// Mobile view, the media is full width. Single column content
+// Tablet portrait view (540px-769px), the media is 85% width with equal space around. Single column content
+// Small desktop view (780-1079px)
+//   Shorter than 12:7 is a 5col-7col content-media split, media is full width and height, min-height 480px
+//   12:7 and taller is same split, but media is 'floated'
+// Medium desktop view (1080-1399px)
+//   Shorter than 12:7 is same as above, but with a min-height of 540px
+//   12:7 and taller, it becomes a 50-50 split and media is 'floated'
+// Large desktop view (1400px+)
+//   layout is adjusted to a max-width of 1380, media has min-heigh of 690
+//   media is floated to the right of container, not browser at all heights
+
+.header-toolbar {
+  height: 4rem;
+  position: relative;
+  @media screen and (min-width: 780px) {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    &__logo {
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-top: 1.2rem;
+      padding-left: 1rem;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+  }
+  @media screen and (min-width: 1460px) {
+    // in case we want to contain the header too
+    // width: 1440px;
+    // left: 50%;
+    // margin-left: -720px;
+  }
+}
+
+.rsvp-button {
+  position: fixed;
+  left: 3rem;
+  bottom: 3rem;
+}
+
+.two-columns { // to extend to full height of screen
+  display:flex;
+  flex:1;
+  flex-flow:column nowrap;
+  min-height:100vh;
+  width:100%;
+  @media (min-width:768px) {
+    flex-flow:row nowrap;
+  }
+}
+
+.basic-info, .media-wrapper {
+  display:flex;
+  flex:1;
+  justify-content:center;
+  align-items:center;
+  flex-flow:column nowrap;
+  min-height:150px;
+  min-height:100vh;
+  @media (min-width: 768px) {
+    flex-flow:row nowrap;
+  }
+}
+
+.basic-info {
+  flex-direction: column;
+  align-items: flex-start;
+  &__title {
+    align-self: center;
+  }
+  @media screen and (min-width: 768px) and (max-aspect-ratio: 16/10) {
+    flex: 1 1 42%;
+  }
+}
+
+.media-wrapper {
+  position: relative;
+  background-color: lighten($background-color, 7%);
+  @media screen and (min-width: 768px) and (max-aspect-ratio: 16/10) {
+    flex: 1 1 58%;
+  }
+}
+
+.primary-media {
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:fixed;
+  width: calc(50% - 4rem);
+  height: calc(100% - 8rem);
+  right: 2rem;
+  top: 6rem;
+  @media screen and (min-width: 768px) and (max-aspect-ratio: 16/10) {
+    background-size: contain;
+    width: calc(58% - 4rem);
+  }
+}
+
+.blocks-list {
+  width: 50vw;
+  display: block;
+}
