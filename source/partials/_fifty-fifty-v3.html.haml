@@ -12,18 +12,25 @@
 
       .rsvp-button RSVP
 
-      .blocks-list
 
-        .block.basic-info
-          - info.event do |event|
-            .basic-info__title= event.name
-            .basic-info__host= "Hosted by " + event.hosts[0].name
-            .basic-info__short-description= event.description
-            .basic-info__date Thursday, February 2, 2018
-            .basic-info__time 7:00PM
-            .basic-info__address
-              =link_to event.address.name, "https://www.google.com/maps/place/?q=place_id:ChIJp4JiUCNP0xQR1JaSjpW_Hms"
-            / .basic-info__address-link="https://www.google.com/maps/place/?q=place_id:ChIJp4JiUCNP0xQR1JaSjpW_Hms"
+      .basic-info
+        - info.event do |event|
+          .basic-info__title= event.name
+          .basic-info__host= "Hosted by " + event.hosts[0].name
+          .basic-info__short-description= event.description
+          .basic-info__date Thursday, February 2, 2018
+          .basic-info__time 7:00PM
+          .basic-info__address
+            =link_to event.address.name, "https://www.google.com/maps/place/?q=place_id:ChIJp4JiUCNP0xQR1JaSjpW_Hms"
+          / .basic-info__address-link="https://www.google.com/maps/place/?q=place_id:ChIJp4JiUCNP0xQR1JaSjpW_Hms"
+
+      .media-wrapper
+        - info.blocks.each do |block|
+          - if block.type == "primary_media"
+            .primary-media{style: "background-image: url('#{block.info.image_url}')" }
+
+
+      .blocks-list
         - info.blocks.each do |block|
           - if block.type == "text"
             .block.text-block
@@ -48,9 +55,3 @@
               .footer__list-items__terms Terms & Conditions
               .footer__list-items__help help
               .footer__list-items__copyright 2018 Paperless Post
-
-
-      .media-wrapper
-        - info.blocks.each do |block|
-          - if block.type == "primary_media"
-            .primary-media{style: "background-image: url('#{block.info.image_url}')" }
