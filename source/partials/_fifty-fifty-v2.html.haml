@@ -53,4 +53,4 @@
       .media-wrapper
         - info.blocks.each do |block|
           - if block.type == "primary_media"
-            .primary-media{style: "background-image: url('#{block.info.image_url}')" }
+            =image_tag block.info.image_url, class: "primary-media"

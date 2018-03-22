@@ -90,10 +90,7 @@
   }
 }
 .primary-media {
-  background-position-x: center;
-  background-position-y: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  object-fit: contain;
   position:fixed;
   width: calc(50% - 4rem);
   height: calc(100% - 8rem);
