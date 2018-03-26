@@ -145,7 +145,7 @@
   }
 
   // To deal with the 1024 max width on all views
-  @media screen and (min-width: 2048px) {
+  @media screen and (min-width: 1980px) {
     width: auto;
     height: calc(100vh - 4rem);
     align-self: center;
@@ -153,7 +153,7 @@
     min-height: 780px;
     top: 4rem;
   }
-  @media screen and (min-width: 2048px) and (max-aspect-ratio: 21/10) {
+  @media screen and (min-width: 1980px) and (max-aspect-ratio: 21/10) {
     top: 50%;
     transform: translateY(-50%);
     margin-top: 2rem;
