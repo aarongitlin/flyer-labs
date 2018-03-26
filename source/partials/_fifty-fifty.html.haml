@@ -12,6 +12,11 @@
 
       .rsvp-button RSVP
 
+      .media-wrapper
+        - info.blocks.each do |block|
+          - if block.type == "primary_media"
+            .primary-media{style: "background-image: url('#{block.info.image_url}')" }
+
       .blocks-list
         .block.basic-info
           - info.event do |event|
@@ -49,8 +54,3 @@
               .footer__list-items__terms Terms & Conditions
               .footer__list-items__help help
               .footer__list-items__copyright 2018 Paperless Post
-
-      .media-wrapper
-        - info.blocks.each do |block|
-          - if block.type == "primary_media"
-            .primary-media{style: "background-image: url('#{block.info.image_url}')" }
