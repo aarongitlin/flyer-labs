@@ -22,17 +22,28 @@ $header-background: $background-color-alt;
 $rsvp-text: $text-color;
 
 
-@mixin heading {
+@mixin page-heading--small {
   font-family: Golden Plains;
-  font-size: 5rem;
   line-height: 6rem;
   margin-bottom: 2rem;
+  font-size: 3.5rem;
+  line-height: 1.0;
+}
+@mixin page-heading {
+  @include page-heading--small;
+  font-size: 5rem;
 }
 
-@mixin page-heading {
-  @include heading;
-  font-size: 6rem;
+@mixin section-heading--small {
+  font-family: Golden Plains;
+  margin-bottom: 2rem;
+  font-size: 5rem;
 }
+@mixin section-heading {
+  @include section-heading--small;
+  font-size: 3rem;
+}
+
 @mixin subheading {
   font-family: FuturaLTPRo-book;
   font-weight: 100;
@@ -49,6 +60,8 @@ $rsvp-text: $text-color;
   letter-spacing: .5px;
   line-height: 1.5rem;
 }
+
+$section-max-width: 600px;
 
 .vista {
   &.wrapper--go {
@@ -70,13 +83,39 @@ $rsvp-text: $text-color;
     // background-color: $background-color;
   }
 
-  .basic-info {
+.block {
+  width: 100%;
+  align-items: center;
 
+  &:nth-child(even) {
+    background-color: $background-color-alt;
+  }
+}
+
+  .basic-info {
+    padding-bottom: 3rem;
+    @media screen and (min-width: 769px) {
+      padding-bottom: 4rem;
+    }
+    & > * {
+      max-width: $section-max-width;
+    }
     &__title {
-      @include page-heading;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      @include page-heading--small;
       margin-top: 1rem;
       text-align: center;
-      @media screen and (min-width: 780px) {
+      @media screen and (min-width: 769px) {
+        margin-top: 4rem;
+      }
+      @media screen and (min-width: 1140px) {
+        @include page-heading;
+        padding-left: 8%;
+        padding-right: 8%;
+      }
+      @media screen and (min-width: 1140px) and (max-aspect-ratio: 21/13) {
+        @include page-heading--small;
         margin-top: 4rem;
       }
     }
@@ -84,17 +123,19 @@ $rsvp-text: $text-color;
       @include subheading;
       margin-left: 16.67%;
       margin-top: 2rem;
+      padding: 0 8%;
     }
     &__short-description {
       @include text;
       margin-left: 16.67%;
       margin-top: 2rem;
-
+      padding: 0 8%;
     }
     &__date {
       @include subheading;
       margin-left: 16.67%;
       margin-top: 2rem;
+      padding: 0 8%;
     }
 
     &__date a {
@@ -105,11 +146,13 @@ $rsvp-text: $text-color;
       @include subheading;
       margin-left: 16.67%;
       margin-top: 0.25rem;
+      padding: 0 8%;
     }
     &__address {
       @include subheading;
       margin-left: 16.67%;
       margin-top: 0.25rem;
+      padding: 0 8%;
     }
   }
 
@@ -130,23 +173,36 @@ $rsvp-text: $text-color;
   }
 
   .text-block {
+    padding-bottom: 3rem;
+    & > * {
+      max-width: $section-max-width;
+    }
+
     opacity: 0;
     position: relative;
-    padding-top: 2rem;
+    padding-top: 3rem;
     &__title {
-      @include heading;
+      @include section-heading;
       text-align: center;
+      padding: 0 8%;
     }
     &__text {
       @include text;
       margin-top: 2rem;
+      padding: 0 8%;
     }
   }
 
   .guestlist {
-    padding-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    & > * {
+      max-width: $section-max-width;
+    }
+
     &__title {
-      @include heading;
+      @include section-heading;
       text-align: center;
     }
     &__guests {
