@@ -997,63 +997,102 @@ body {
   .vista .header-toolbar__logo {
     opacity: 0;
     color: #DFAA9C; }
-  .vista .basic-info__title {
-    font-family: Golden Plains;
-    font-size: 5rem;
-    line-height: 6rem;
-    margin-bottom: 2rem;
-    font-size: 6rem;
-    margin-top: 1rem;
-    text-align: center; }
-    @media screen and (min-width: 780px) {
-      .vista .basic-info__title {
-        margin-top: 4rem; } }
-  .vista .basic-info__host {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 0.875rem;
-    letter-spacing: 3px;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    margin-left: 16.67%;
-    margin-top: 2rem; }
-  .vista .basic-info__short-description {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 1rem;
-    letter-spacing: .5px;
-    line-height: 1.5rem;
-    margin-left: 16.67%;
-    margin-top: 2rem; }
-  .vista .basic-info__date {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 0.875rem;
-    letter-spacing: 3px;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    margin-left: 16.67%;
-    margin-top: 2rem; }
-  .vista .basic-info__date a {
-    color: white; }
-  .vista .basic-info__time {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 0.875rem;
-    letter-spacing: 3px;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    margin-left: 16.67%;
-    margin-top: 0.25rem; }
-  .vista .basic-info__address {
-    font-family: FuturaLTPRo-book;
-    font-weight: 100;
-    font-size: 0.875rem;
-    letter-spacing: 3px;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    margin-left: 16.67%;
-    margin-top: 0.25rem; }
+  .vista .block {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .vista .block:nth-child(even) {
+      background-color: #fbe8e3; }
+  .vista .basic-info {
+    padding-bottom: 3rem; }
+    @media screen and (min-width: 769px) {
+      .vista .basic-info {
+        padding-bottom: 4rem; } }
+    .vista .basic-info > * {
+      max-width: 600px; }
+    .vista .basic-info__title {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      font-family: Golden Plains;
+      line-height: 6rem;
+      margin-bottom: 2rem;
+      font-size: 3.5rem;
+      line-height: 1.0;
+      margin-top: 1rem;
+      text-align: center; }
+      @media screen and (min-width: 769px) {
+        .vista .basic-info__title {
+          margin-top: 4rem; } }
+      @media screen and (min-width: 1140px) {
+        .vista .basic-info__title {
+          font-family: Golden Plains;
+          line-height: 6rem;
+          margin-bottom: 2rem;
+          font-size: 3.5rem;
+          line-height: 1.0;
+          font-size: 5rem;
+          padding-left: 8%;
+          padding-right: 8%; } }
+      @media screen and (min-width: 1140px) and (max-aspect-ratio: 21 / 13) {
+        .vista .basic-info__title {
+          font-family: Golden Plains;
+          line-height: 6rem;
+          margin-bottom: 2rem;
+          font-size: 3.5rem;
+          line-height: 1.0;
+          margin-top: 4rem; } }
+    .vista .basic-info__host {
+      font-family: FuturaLTPRo-book;
+      font-weight: 100;
+      font-size: 0.875rem;
+      letter-spacing: 3px;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      margin-left: 16.67%;
+      margin-top: 2rem;
+      padding: 0 8%; }
+    .vista .basic-info__short-description {
+      font-family: FuturaLTPRo-book;
+      font-weight: 100;
+      font-size: 1rem;
+      letter-spacing: .5px;
+      line-height: 1.5rem;
+      margin-left: 16.67%;
+      margin-top: 2rem;
+      padding: 0 8%; }
+    .vista .basic-info__date {
+      font-family: FuturaLTPRo-book;
+      font-weight: 100;
+      font-size: 0.875rem;
+      letter-spacing: 3px;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      margin-left: 16.67%;
+      margin-top: 2rem;
+      padding: 0 8%; }
+    .vista .basic-info__date a {
+      color: white; }
+    .vista .basic-info__time {
+      font-family: FuturaLTPRo-book;
+      font-weight: 100;
+      font-size: 0.875rem;
+      letter-spacing: 3px;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      margin-left: 16.67%;
+      margin-top: 0.25rem;
+      padding: 0 8%; }
+    .vista .basic-info__address {
+      font-family: FuturaLTPRo-book;
+      font-weight: 100;
+      font-size: 0.875rem;
+      letter-spacing: 3px;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      margin-left: 16.67%;
+      margin-top: 0.25rem;
+      padding: 0 8%; }
   .vista .rsvp-button {
     background-color: #DBF4EA;
     border-radius: 80px;
@@ -1070,29 +1109,37 @@ body {
     font-weight: bold;
     z-index: 1; }
   .vista .text-block {
+    padding-bottom: 3rem;
     opacity: 0;
     position: relative;
-    padding-top: 2rem; }
+    padding-top: 3rem; }
+    .vista .text-block > * {
+      max-width: 600px; }
     .vista .text-block__title {
       font-family: Golden Plains;
-      font-size: 5rem;
-      line-height: 6rem;
       margin-bottom: 2rem;
-      text-align: center; }
+      font-size: 5rem;
+      font-size: 3rem;
+      text-align: center;
+      padding: 0 8%; }
     .vista .text-block__text {
       font-family: FuturaLTPRo-book;
       font-weight: 100;
       font-size: 1rem;
       letter-spacing: .5px;
       line-height: 1.5rem;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      padding: 0 8%; }
   .vista .guestlist {
-    padding-top: 2rem; }
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    .vista .guestlist > * {
+      max-width: 600px; }
     .vista .guestlist__title {
       font-family: Golden Plains;
-      font-size: 5rem;
-      line-height: 6rem;
       margin-bottom: 2rem;
+      font-size: 5rem;
+      font-size: 3rem;
       text-align: center; }
     .vista .guestlist__guests {
       font-family: FuturaLTPRo-book;
