@@ -1315,6 +1315,9 @@ body {
       max-width: 58vw;
       min-width: 42vw;
       margin-top: 4rem; } }
+  @media screen and (min-width: 1940px) {
+    .blocks-list {
+      min-width: 50vw; } }
   .blocks-list .block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1347,7 +1350,7 @@ body {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   position: relative; }
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 580px) {
     .media-wrapper {
       margin: 2rem 2rem 0 2rem; } }
   @media screen and (min-width: 769px) {
@@ -1364,9 +1367,6 @@ body {
       min-width: 42vw;
       background-color: #fcf0ec;
       margin: unset; } }
-  @media screen and (min-width: 1760px) {
-    .media-wrapper {
-      width: 50vw; } }
 
 .primary-media {
   position: relative;
@@ -1385,7 +1385,7 @@ body {
       top: 4rem;
       min-height: 42vw;
       width: auto; } }
-  @media screen and (min-width: 769px) and (max-aspect-ratio: 21 / 13) {
+  @media screen and (min-width: 769px) and (max-aspect-ratio: 25 / 16) {
     .primary-media {
       width: calc(58vw - 4rem);
       height: calc(58vw - 4rem);
@@ -1396,7 +1396,7 @@ body {
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       margin-top: 2rem; } }
-  @media screen and (min-width: 1760px) and (max-aspect-ratio: 21 / 12) {
+  @media screen and (min-width: 1700px) and (max-aspect-ratio: 25 / 14) {
     .primary-media {
       width: calc(58vw - 4rem);
       height: calc(58vw - 4rem);
@@ -1409,16 +1409,16 @@ body {
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       margin-top: 2rem; } }
-  @media screen and (min-width: 2048px) {
+  @media screen and (min-width: 1940px) {
     .primary-media {
       width: auto;
-      height: calc(100vh - 4rem);
+      height: calc(100vh - 6rem);
       -ms-flex-item-align: center;
           align-self: center;
       padding: 2rem;
       min-height: 780px;
       top: 4rem; } }
-  @media screen and (min-width: 2048px) and (max-aspect-ratio: 21 / 10) {
+  @media screen and (min-width: 1940px) and (max-aspect-ratio: 25 / 12) {
     .primary-media {
       top: 50%;
       -webkit-transform: translateY(-50%);
