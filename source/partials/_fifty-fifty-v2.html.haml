@@ -16,7 +16,8 @@
 
         .block.basic-info
           - info.event do |event|
-            .basic-info__title= event.name
+            .basic-info__title
+              %span= event.name
             .basic-info__host= "Hosted by " + event.hosts[0].name
             .basic-info__short-description= event.description
             .basic-info__date Thursday, February 2, 2018
@@ -27,12 +28,14 @@
         - info.blocks.each do |block|
           - if block.type == "text"
             .block.text-block
-              .text-block__title= block.info.title
+              .text-block__title
+                %span= block.info.title
               .text-block__text= block.info.text
 
         - if data.event_2_guests.guestlist.settings.list_privacy == "public"
           .block.guestlist
-            .guestlist__title Guestlist
+            .guestlist__title
+              %span Guestlist
             %ul.guestlist__guests
               - data.event_2_guests.guestlist.guests.each do |guest|
                 %li.guestlist__guests__guest= guest.first_name + " " + guest.last_name

@@ -6,12 +6,14 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Flyer Go Page Prototype</title>
     <%= stylesheet_link_tag "main_float_v2" %>
-
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://michikono.github.io/boxfit/bower_components/jquery.boxfit/dist/jquery.boxfit.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.textfill.min.js"></script>
   </head>
   <body>
     <div id="root">
       <%= yield %>
     </div>
   </body>
+  <%= javascript_include_tag "site" %>
 </html>

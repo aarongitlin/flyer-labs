@@ -22,26 +22,11 @@ $header-background: $background-color-alt;
 $rsvp-text: $text-color;
 
 
-@mixin page-heading--small {
-  font-family: Golden Plains;
-  line-height: 6rem;
-  margin-bottom: 2rem;
-  font-size: 3.5rem;
-  line-height: 1.0;
-}
-@mixin page-heading {
-  @include page-heading--small;
-  font-size: 5rem;
-}
 
-@mixin section-heading--small {
+@mixin heading {
   font-family: Golden Plains;
+  line-height: 1;
   margin-bottom: 2rem;
-  font-size: 5rem;
-}
-@mixin section-heading {
-  @include section-heading--small;
-  font-size: 3rem;
 }
 
 @mixin subheading {
@@ -103,19 +88,10 @@ $section-max-width: 600px;
     &__title {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
-      @include page-heading--small;
+      @include heading;
       margin-top: 1rem;
       text-align: center;
       @media screen and (min-width: 769px) {
-        margin-top: 4rem;
-      }
-      @media screen and (min-width: 1140px) {
-        @include page-heading;
-        padding-left: 8%;
-        padding-right: 8%;
-      }
-      @media screen and (min-width: 1140px) and (max-aspect-ratio: 21/13) {
-        @include page-heading--small;
         margin-top: 4rem;
       }
     }
@@ -182,7 +158,7 @@ $section-max-width: 600px;
     position: relative;
     padding-top: 3rem;
     &__title {
-      @include section-heading;
+      @include heading;
       text-align: center;
       padding: 0 8%;
     }
@@ -202,7 +178,7 @@ $section-max-width: 600px;
     }
 
     &__title {
-      @include section-heading;
+      @include heading;
       text-align: center;
     }
     &__guests {
