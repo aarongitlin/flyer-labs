@@ -1,18 +1,37 @@
-// The below works as follows
-// Mobile view, the media is full width. Single column content
-// Tablet portrait view (540px-769px), the media is 85% width with equal space around. Single column content
-// Small desktop view (780-1079px)
-//   Shorter than 12:7 is a 5col-7col content-media split, media is full width and height, min-height 480px
-//   12:7 and taller is same split, but media is 'floated'
-// Medium desktop view (1080-1399px)
-//   Shorter than 12:7 is same as above, but with a min-height of 540px
-//   12:7 and taller, it becomes a 50-50 split and media is 'floated'
-// Large desktop view (1400px+)
-//   layout is adjusted to a max-width of 1380, media has min-heigh of 690
-//   media is floated to the right of container, not browser at all heights
+
+$header-size: 0rem;
+  // width = browser width, height = 58% of width + header-size
+  $aspect-ratio-1: "25/14";
+
+  // width = browser width when image is at max-width, height = image-max-width + header-size
+  // example if image-max-width = 1024 then when 1024 = 58% of browser width, breakpoint is approx 1765px
+  $large-break-point-1: "1765px";
+  // Aspect ratio here is the large width break point below, height = image-max-width + header-size
+
+  // width = image-max-width - header-size * 2
+  $large-break-point-2: "2048px";
+
+  // Aspect ratio here is based on the width above, height = image-max-width + header-size
+  $aspect-ratio-2: "24/12";
+  $min-height: "1024px"; // image-max-width
+
+$header-size: 10rem;
+$aspect-ratio-1: "25/18";  // 1000 / (580+160) =  1.35
+$large-break-point-1: "1765px"; // 1024/.58 = 1765
+$large-break-point-2: "2048px"; // 1024 * 2 = 2048
+$aspect-ratio-2: "25/14"; // 2048 / (1024 + 160) = 1.72
+$min-height: "1184px"; // random low ratio for large and tall screens
+
+$header-size: 4rem;
+$aspect-ratio-1: "25/16";  // 1000 / (580+64) =  1.55
+$large-break-point-1: "1765px"; // 1024/.58 = 1765
+$large-break-point-2: "2048px"; // 1024 * 2 = 2048
+$aspect-ratio-2: "25/14"; // 2048 / (1024 + 64) = 1.88
+$min-height: "1088px"; // // 1024 + 64
+
 
 .header-toolbar {
-  height: 4rem;
+  height: $header-size;
   position: relative;
   @media screen and (min-width: 769px) {
     width: 100%;
@@ -56,10 +75,11 @@
   @media screen and (min-width: 769px) {
     flex: 0 0 auto;
     order: 1;
-    width: calc(100vw - 100vh + 4rem);
+    width: calc(100vw - 100vh + #{$header-size});
     max-width: 58vw;
     min-width: 42vw;
-    margin-top: 4rem;
+    margin-top: #{$header-size};
+    // This section needs to be adjusted for headers
   }
   @media screen and (min-width: 1940px) {
     min-width: 50vw; // Max out at 50/50 for very large screens
@@ -110,48 +130,49 @@
 
   @media screen and (min-width: 769px) {
     position: fixed;
-    height: calc(100vh - 4rem);
+    height: calc(100vh - #{$header-size}); // This needs to be changed with header
     align-self: flex-end;
-    top: 4rem;
+    top: $header-size;
     min-height: 42vw;
     width: auto;
   }
 
-  @media screen and (min-width: 769px) and (max-aspect-ratio: 25/16) {
-    width: calc(58vw - 4rem);
+  @media screen and (min-width: 769px) and (max-aspect-ratio: #{$aspect-ratio-1}) {
+    width: calc(58vw - 4rem); // These need to change with header
     height: calc(58vw - 4rem);
     align-self: center;
     top: 50%;
     transform: translateY(-50%);
-    margin-top: 2rem;
+    margin-top: calc(#{$header-size} / 2); //
   }
 
   // To deal with the 1024 max width on 42/58 splits
-  @media screen and (min-width: 1700px) and (max-aspect-ratio: 25/14) {
-    width: calc(58vw - 4rem);
-    height: calc(58vw - 4rem);
+  @media screen and (min-width: #{$large-break-point-1}) and (max-aspect-ratio: #{$aspect-ratio-2}) {
+    width: calc(56vw - 4rem);
+    height: calc(56vw - 4rem);
     align-self: center;
-    padding: 2rem;
+    padding: 3rem;
     min-height: 780px;
     top: 50%;
     transform: translateY(-50%);
-    margin-top: 2rem;
+    margin-top: calc(#{$header-size} / 2); //
   }
 
   // To deal with the 1024 max width on all views
-  @media screen and (min-width: 1940px) {
+  @media screen and (min-width: #{$large-break-point-2}) {
     // to allow float but keep it aligned to the top
     width: auto;
-    height: calc(100vh - 6rem); // 3rem padding each side
+    height: calc(100vh - #{$header-size}); // 3rem padding each side
     align-self: center;
-    padding: 2rem;
+    justify-self: center;
+    padding: 3rem;
     min-height: 780px;
-    top: 4rem;
+    top: $header-size;
   }
-  @media screen and (min-width: 1940px) and (max-aspect-ratio: 25/12) {
+  @media screen and (min-width: #{$large-break-point-2}) and (min-height: #{$min-height} ) {
     // to keep the image centered
     top: 50%;
     transform: translateY(-50%);
-    margin-top: 2rem;
+    margin-top: calc(#{$header-size} / 2); //
   }
 }
