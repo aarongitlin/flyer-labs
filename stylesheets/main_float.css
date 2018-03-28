@@ -997,6 +997,7 @@ body {
       font-family: Golden Plains;
       line-height: 1;
       margin-bottom: 2rem;
+      text-align: center;
       margin-top: 1rem;
       text-align: center; }
       @media screen and (min-width: 769px) {
@@ -1080,6 +1081,7 @@ body {
       line-height: 1;
       margin-bottom: 2rem;
       text-align: center;
+      text-align: center;
       padding: 0 8%; }
     .vista .text-block__text {
       font-family: FuturaLTPRo-book;
@@ -1098,6 +1100,7 @@ body {
       font-family: Golden Plains;
       line-height: 1;
       margin-bottom: 2rem;
+      text-align: center;
       text-align: center; }
     .vista .guestlist__guests {
       font-family: FuturaLTPRo-book;
