@@ -26,13 +26,13 @@ $header-value: 64;
 $image-max-size: 1024;
 
 $header-size: $header-value/16 + rem;
-$large-break-point-1: ($image-max-size/(.58)); // 1024/.58 = 1765
+$large-break-point-1: ($image-max-size/(.58));
 $aspect-ratio-1-numerator: round($large-break-point-1 / ($image-max-size + $header-value) * 100);
 $aspect-ratio-1: "#{$aspect-ratio-1-numerator}" + "/100";
 $large-break-point-2: ($image-max-size*2);
 $aspect-ratio-2-numerator: round($large-break-point-2 / ($image-max-size + $header-value) * 100);
 $aspect-ratio-2: "#{$aspect-ratio-2-numerator}/100";
-$min-height: $image-max-size + $header-value; // 1024 + 64
+$min-height: $image-max-size + $header-value;
 
 
 .header-toolbar {
@@ -118,10 +118,8 @@ $min-height: $image-max-size + $header-value; // 1024 + 64
     flex: 1 1 0;
     flex-basis: 0;
     order: 2;
-    // width: calc(100vw - (100vh - 4rem));
     height: auto;
     min-width: 42vw;
-    background-color: lighten($background-color, 7%);
     margin: unset;
   }
 }

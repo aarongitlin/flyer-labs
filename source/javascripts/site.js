@@ -1,10 +1,10 @@
-// This is where it all goes :)
 
+// Get and set widths for the titles within their containers
 var containerWidth = $(".blocks-list").width();
-var spanHeight = $(this).find("span").height();
 $(".basic-info__title").width((containerWidth * .85)).height(114);
 $(".text-block__title, .guestlist__title").width((containerWidth * .65)).height(64);
 
+// Initialize textfill with min and max font sizes
 $(".basic-info__title").textfill({
   maxFontPixels: 112
 });
@@ -15,14 +15,18 @@ $(".guestlist__title").textfill({
   maxFontPixels: 64
 });
 
+var spanHeight = $(".basic-info__title > span").height();
+$(".basic-info__title").css(
+  "margin-bottom", ( spanHeight - $(".basic-info__title").height() + 32 )
+);
+
+// Bind the same width calculations to resize events, so it's calcualted on the fly
 $( window ).bind("resize", function(){
   var containerWidth = $(".basic-info").width();
-  var spanHeight = $(this).find("span").height();
   $(".basic-info__title").width((containerWidth * .85));
   $(".text-block__title, .guestlist__title").width((containerWidth * .65));
-});
 
-$( window ).bind("resize", function(){
+// Bind the textfill plugin on resize as well, using the widths calculated above
   $(".basic-info__title").textfill({
     maxFontPixels: 112
   });
@@ -32,4 +36,9 @@ $( window ).bind("resize", function(){
   $(".guestlist__title").textfill({
     maxFontPixels: 64
   });
+
+  var spanHeight = $(".basic-info__title > span").height();
+  $(".basic-info__title").css(
+    "margin-bottom", ( spanHeight - $(".basic-info__title").height() + 32 )
+  );
 });
