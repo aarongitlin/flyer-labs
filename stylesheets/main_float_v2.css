@@ -696,59 +696,6 @@ body {
   text-transform: uppercase;
   font-size: 0.75rem; }
 
-#root {
-  height: 100%; }
-
-.wrapper--editor {
-  height: 100%;
-  background-color: #eee;
-  max-width: 1400px;
-  margin: auto;
-  overflow-x: scroll;
-  overflow-y: hidden; }
-
-.wrapper--go {
-  height: 100%; }
-
-.main-page {
-  background-color: #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100%; }
-
-.left-drawer {
-  overflow-y: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 10rem;
-          flex: 1 0 10rem;
-  background-color: #666;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-  margin-left: 1.5rem; }
-
-.flyer-preview {
-  background-color: #fff;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin: 1.5rem 1.5rem 5rem 2rem;
-  -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
-  max-height: 750px; }
-  .flyer-preview__browser-chrome {
-    height: 1.5rem;
-    background-color: #666; }
-  .flyer-preview__content {
-    height: calc(100% - 1.5rem);
-    min-height: 490px;
-    min-width: 784px; }
-    .flyer-preview__content iframe {
-      border: none;
-      width: 100%;
-      height: 100%; }
-
 .vista {
   color: #3d5f75; }
   .vista.wrapper--go {
@@ -1170,7 +1117,7 @@ body {
   to {
     opacity: 1; } }
 .header-toolbar {
-  height: 4rem;
+  height: 0rem;
   position: relative; }
   @media screen and (min-width: 769px) {
     .header-toolbar {
@@ -1232,11 +1179,11 @@ body {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1;
-      width: calc(100vw - 100vh + 4rem);
+      width: calc(100vw - 100vh + 0rem);
       max-width: 58vw;
       min-width: 42vw;
-      margin-top: 4rem; } }
-  @media screen and (min-width: 1940px) {
+      margin-top: 0rem; } }
+  @media screen and (min-width: 2048px) {
     .blocks-list {
       min-width: 50vw; } }
   .blocks-list .block {
@@ -1299,13 +1246,13 @@ body {
   @media screen and (min-width: 769px) {
     .primary-media {
       position: fixed;
-      height: calc(100vh - 4rem);
+      height: calc(100vh - 0rem);
       -ms-flex-item-align: end;
           align-self: flex-end;
-      top: 4rem;
+      top: 0rem;
       min-height: 42vw;
       width: auto; } }
-  @media screen and (min-width: 769px) and (max-aspect-ratio: 162 / 100) {
+  @media screen and (min-width: 769px) and (max-aspect-ratio: 172 / 100) {
     .primary-media {
       width: calc(58vw - 4rem);
       height: calc(58vw - 4rem);
@@ -1315,8 +1262,8 @@ body {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
-      margin-top: calc(4rem / 2); } }
-  @media screen and (min-width: 1765.51724px) and (max-aspect-ratio: 188 / 100) {
+      margin-top: calc(0rem / 2); } }
+  @media screen and (min-width: 1765.51724px) and (max-aspect-ratio: 200 / 100) {
     .primary-media {
       width: calc(56vw - 4rem);
       height: calc(56vw - 4rem);
@@ -1328,21 +1275,113 @@ body {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
-      margin-top: calc(4rem / 2); } }
+      margin-top: calc(0rem / 2); } }
   @media screen and (min-width: 2048px) {
     .primary-media {
       width: auto;
-      height: calc(100vh - 4rem);
+      height: calc(100vh - 0rem);
       -ms-flex-item-align: center;
           align-self: center;
       justify-self: center;
       padding: 3rem;
       min-height: 780px;
-      top: 4rem; } }
-  @media screen and (min-width: 2048px) and (min-height: 1088px) {
+      top: 0rem; } }
+  @media screen and (min-width: 2048px) and (min-height: 1024px) {
     .primary-media {
       top: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
-      margin-top: calc(4rem / 2); } }
+      margin-top: calc(0rem / 2); } }
+
+#root {
+  height: 100%; }
+
+.wrapper--editor {
+  height: 100%;
+  background-color: #eee;
+  max-width: 1400px;
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden; }
+
+.wrapper--go {
+  height: 100%; }
+
+.main-page {
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.left-drawer {
+  overflow-y: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12rem;
+          flex: 0 0 12rem;
+  background-color: #666;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  margin-left: 1.5rem; }
+
+.preview-area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.flyer-preview {
+  background-color: #fff;
+  margin: 1.5rem 1.5rem 4.5rem 2rem;
+  -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100vw - 17rem);
+  min-width: 860px;
+  max-width: calc(1400px - 17rem); }
+  .flyer-preview__browser-chrome {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 1.5rem;
+            flex: 1 0 1.5rem; }
+  .flyer-preview__content {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    height: calc((100vw - 17rem) / 2);
+    min-height: 480px;
+    max-height: calc((1400px - 17rem) / 1.8); }
+  .flyer-preview iframe {
+    border: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
