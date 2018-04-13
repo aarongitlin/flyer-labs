@@ -232,14 +232,145 @@ $section-max-width: 600px;
   }
 }
 
-@mixin moveInFromLeft {
-  @keyframes moveInFromLeft {
-    0% { transform: translateX(-0.875rem); }
-    100% { transform: translateX(0); }
+// Stage 1 - animage background colors in
+
+.vista .block {
+  background-color: #fff;
+  animation: fadeBGColorIn 1.25s ease-in-out;
+  animation-fill-mode: forwards;
+  @keyframes fadeBGColorIn {
+    from { background-color: #fff; }
+    to   { background-color: $background-color; }
+  }
+}
+
+.vista .block:nth-child(even) {
+  background-color: #fff;
+  animation: fadeAltBGColorIn 1.25s ease-in-out;
+  animation-fill-mode: forwards;
+  @keyframes fadeAltBGColorIn {
+    from { background-color: #fff; }
+    to   { background-color: $background-color-alt; }
+  }
+}
+
+.vista .media-wrapper {
+  @media screen and (min-width: 840px) {
+    animation: fadeMediaColorIn 1.25s ease-in-out;
+    animation-fill-mode: forwards;
+    @keyframes fadeMediaColorIn {
+      from { background-color: #fff; }
+      to   { background-color: lighten($background-color, 7%); }
+    }
+  }
+}
+
+.header-toolbar {
+  animation: fadeToolbarBGIn 1.25s ease-in-out;
+  animation-fill-mode: forwards;
+  @keyframes fadeToolbarBGIn {
+    from { background-color: #fff; }
+    to { background-color: $header-background; }
+  }
+}
+
+
+ // Stage 2 - toolbar content, info and text blocks
+
+//// Title
+
+//// toolbar content
+ [class*="header-toolbar__"] {
+   opacity: 0;
+   animation: fadeIn 0.75s ease-in-out;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+   @include fadeIn;
+ }
+.basic-info__title {
+  opacity: 0;
+  position: relative;
+  animation-name: fadeIn;
+  animation-duration: 1.0s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  @include fadeIn;
+}
+
+.basic-info__host, .basic-info__short-description, .basic-info__date, .basic-info__time, .basic-info__address {
+  opacity: 0;
+  position: relative;
+  animation: fadeInMoveUp 1.0s ease-in-out;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  @include fadeInMoveUp;
+  }
+
+.text-block > * {
+  opacity: 0;
+  animation: fadeInMoveUp 1.0s ease-in-out;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  @include fadeInMoveUp;
+}
+
+.guestlist > * {
+  opacity: 0;
+  animation: fadeInMoveUp 1.0s ease-in-out;
+  animation-delay: 2.0s;
+  animation-fill-mode: forwards;
+  @include fadeInMoveUp;
+}
+
+.footer > * {
+  opacity: 0;
+  animation: fadeInMoveUp 1.0s ease-in-out;
+  animation-delay: 2.25s;
+  animation-fill-mode: forwards;
+  @include fadeInMoveUp;
+}
+
+
+
+// Stage 3 - animate blocks in one at a time
+
+//// image
+.primary-media {
+ opacity: 0;
+ animation-name: fadeIn;
+ animation-duration: 1.0s;
+ animation-timing-function: ease-in-out;
+ animation-delay: 2.5s;
+ animation-fill-mode: forwards;
+ @include fadeIn;
+}
+
+
+// Stage 4 - RSVP button
+
+.rsvp-button {
+  width: 150px;
+  height: 60px;
+  opacity: 0;
+  animation-name: fadeInButton;
+  animation-duration: 1s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+  @keyframes fadeInButton {
+    0% {
+      transform: translateX(-1rem);
+      opacity: 0
+    }
+    100% {
+      transform: translateX(0rem);
+      opacity: 1;
     }
   }
 
+}
 
+/// loading blocks:
 // .group {
 //   position: absolute;
 //   width: 64px;
@@ -355,137 +486,3 @@ $section-max-width: 600px;
 
 // stage 1 - fade in bg
 //// background color
-.vista .block {
-  background-color: #fff;
-  animation: fadeBGColorIn 1.25s ease-in-out;
-  animation-fill-mode: forwards;
-  @keyframes fadeBGColorIn {
-    from { background-color: #fff; }
-    to   { background-color: $background-color; }
-  }
-}
-
-.vista .block:nth-child(even) {
-  background-color: #fff;
-  animation: fadeAltBGColorIn 1.25s ease-in-out;
-  animation-fill-mode: forwards;
-  @keyframes fadeAltBGColorIn {
-    from { background-color: #fff; }
-    to   { background-color: $background-color-alt; }
-  }
-}
-
-.vista .media-wrapper {
-  @media screen and (min-width: 840px) {
-    animation: fadeMediaColorIn 1.25s ease-in-out;
-    animation-fill-mode: forwards;
-    @keyframes fadeMediaColorIn {
-      from { background-color: #fff; }
-      to   { background-color: lighten($background-color, 7%); }
-    }
-  }
-}
-
-//// toolbar background color
-.header-toolbar {
-  animation: fadeToolbarBGIn 1.25s ease-in-out;
-  animation-fill-mode: forwards;
-  @keyframes fadeToolbarBGIn {
-    from { background-color: #fff; }
-    to { background-color: $header-background; }
-  }
-}
-
-
- // Stage 2 - toolbar content, blocks, rsvp button
-
-//// Title
-
-//// toolbar content
- [class*="header-toolbar__"] {
-   opacity: 0;
-   animation: fadeIn 0.75s ease-in-out;
-   animation-delay: 1s;
-   animation-fill-mode: forwards;
-   @include fadeIn;
- }
-.basic-info__title {
-  opacity: 0;
-  position: relative;
-  animation-name: fadeIn, moveInFromLeft;
-  animation-duration: 1.0s, 1.0s;
-  animation-timing-function: ease-in-out, ease-in-out;
-  animation-delay: 1s, 1s;
-  animation-fill-mode: forwards;
-  @include fadeIn;
-  @include moveInFromLeft;
-}
-
-.basic-info__host, .basic-info__short-description, .basic-info__date, .basic-info__time, .basic-info__address {
-  opacity: 0;
-  position: relative;
-  animation: fadeInMoveUp 1.0s ease-in-out;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-  @include fadeInMoveUp;
-  }
-
-.text-block > * {
-  opacity: 0;
-  animation: fadeInMoveUp 1.0s ease-in-out;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  @include fadeInMoveUp;
-}
-
-.guestlist > * {
-  opacity: 0;
-  animation: fadeInMoveUp 1.0s ease-in-out;
-  animation-delay: 2.0s;
-  animation-fill-mode: forwards;
-  @include fadeInMoveUp;
-}
-
-.footer > * {
-  opacity: 0;
-  animation: fadeInMoveUp 1.0s ease-in-out;
-  animation-delay: 2.25s;
-  animation-fill-mode: forwards;
-  @include fadeInMoveUp;
-}
-
-.rsvp-button {
-  width: 60px;
-  height: 60px;
-  left: 2rem;
-  color: rgba($rsvp-text, 0);
-  animation-name: moveButton, buttonOpen, buttonTextColor;
-  animation-duration: 0.25s, 0.65s, 0.5s;
-  animation-delay: 1.7s, 1.8s, 1.9s;
-  animation-fill-mode: forwards;
-  @keyframes buttonOpen {
-    0% { width: 60px; }
-    100% { width: 150px; }
-  }
-  @keyframes moveButton {
-    0% { left: 2rem; }
-    100% {left: 3rem; }
-  }
-  @keyframes buttonTextColor {
-    0% { color: rgba($rsvp-text, 0); }
-    100% { color: rgba($rsvp-text, 1); }
-  }
-}
-
-// Stage 3 - animate blocks in one at a time
-
-//// image
-.primary-media {
- opacity: 0;
- animation-name: fadeIn;
- animation-duration: 1.0s;
- animation-timing-function: ease-in-out;
- animation-delay: 2.5s;
- animation-fill-mode: forwards;
- @include fadeIn;
-}
