@@ -22,7 +22,7 @@
 // $aspect-ratio-2: "25/14"; // 2048 / (1024 + 160) = 1.72
 // $min-height: "1184px"; // random low ratio for large and tall screens
 
-$header-value: 64;
+$header-value: 0;
 $image-max-size: 1024;
 
 $header-size: $header-value/16 + rem;
