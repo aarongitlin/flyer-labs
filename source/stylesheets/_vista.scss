@@ -28,7 +28,9 @@ $rsvp-text: $text-color;
   line-height: 1;
   margin-bottom: 2rem;
   text-align: center;
-
+  font-size: calc(42px + 72 * (100vw - 835px) / (1920 - 835));
+  // Scales by 1px for every 100px from 600px to 1000px
+  // https://zellwk.com/blog/viewport-based-typography/
 }
 
 @mixin subheading {
@@ -52,7 +54,7 @@ $section-max-width: 600px;
 
 .vista {
   &.wrapper--go {
-    background-color: lighten( $background-color, 7% );
+    background-color: $background-color;
   }
   color: $text-color;
 
@@ -64,6 +66,7 @@ $section-max-width: 600px;
 
   .two-columns {
     .media-wrapper {
+      background-color: $background-color;
     }
   }
 
@@ -78,7 +81,7 @@ $section-max-width: 600px;
 
   .basic-info {
     padding-bottom: 3rem;
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 840px) {
       padding-bottom: 4rem;
     }
     & > * {
@@ -90,7 +93,7 @@ $section-max-width: 600px;
       @include heading;
       margin-top: 1rem;
       text-align: center;
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 840px) {
         margin-top: 4rem;
       }
     }
@@ -170,6 +173,7 @@ $section-max-width: 600px;
       margin-left: 16.67%;
       margin-top: 2rem;
       padding: 0 8%;
+      align-self: flex-start;
     }
   }
 
@@ -372,11 +376,13 @@ $section-max-width: 600px;
 }
 
 .vista .media-wrapper {
-  animation: fadeMediaColorIn 1.25s ease-in-out;
-  animation-fill-mode: forwards;
-  @keyframes fadeMediaColorIn {
-    from { background-color: #fff; }
-    to   { background-color: lighten($background-color, 7%); }
+  @media screen and (min-width: 840px) {
+    animation: fadeMediaColorIn 1.25s ease-in-out;
+    animation-fill-mode: forwards;
+    @keyframes fadeMediaColorIn {
+      from { background-color: #fff; }
+      to   { background-color: lighten($background-color, 7%); }
+    }
   }
 }
 

@@ -25,11 +25,10 @@ body {
 // future todo: load css conditionally
 @import "action-bar";
 
-@import "editor";
-
-@import "fifty-fifty-structure";
-
 @import "vista";
 
-// @import "vista-stripe";
-@import "vista-stripe-v2";
+@import "fifty-fifty-structure-v3";
+
+@import "editor";
+
+//@import "vista-stripe-v2";
