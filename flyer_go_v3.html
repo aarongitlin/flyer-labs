@@ -5,8 +5,10 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Flyer Go Page Prototype</title>
-    <link href="stylesheets/main_stripe.css" rel="stylesheet" />
-
+    <link href="stylesheets/main_float_v3.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://michikono.github.io/boxfit/bower_components/jquery.boxfit/dist/jquery.boxfit.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.textfill.min.js"></script>
   </head>
   <body>
     <div id="root">
@@ -22,11 +24,7 @@
 </div>
 <div class='two-columns'>
 <div class='rsvp-button'>RSVP</div>
-<div class='media-wrapper'>
-<div class='primary-media' style='background-image: url(&#39;images/thank-you-square.jpeg&#39;)'></div>
-</div>
-<div class='blocks-list'>
-<div class='block basic-info'>
+<div class='basic-info'>
 <div class='basic-info__title'>Happy Birthday!</div>
 <div class='basic-info__host'>Hosted by Sarnoff + Sarnoff</div>
 <div class='basic-info__short-description'>The Sarnoff crew would like to thank Gwilliam Ivary’s staff for their hard work getting out the Kaiser MSJs (and for just generally being awesome) with a little wine and cheese happy hour Thursday after our deposition.</div>
@@ -37,6 +35,11 @@
 </div>
 <!-- .basic-info__address-link="https://www.google.com/maps/place/?q=place_id:ChIJp4JiUCNP0xQR1JaSjpW_Hms" -->
 </div>
+<div class='media-wrapper'>
+<img src="images/thank-you-square.jpeg" class="primary-media" alt="Thank you square" />
+</div>
+</div>
+<div class='blocks-list'>
 <div class='block text-block'>
 <div class='text-block__title'>Contact us</div>
 <div class='text-block__text'>GET IN TOUCH with any questions about the event. Please don't hesitate.
@@ -69,9 +72,9 @@ maurice.clarke@icloud.com
 </div>
 </div>
 </div>
-</div>
 
 
     </div>
   </body>
+  <script src="javascripts/site.js"></script>
 </html>
