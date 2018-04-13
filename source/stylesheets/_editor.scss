@@ -8,7 +8,7 @@ $image-max-size: 1024;
 .wrapper--editor {
   height: 100%;
   background-color: #eee;
-  max-width: 1400px;
+  max-width: 1680px;
   margin: auto;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -49,7 +49,7 @@ $image-max-size: 1024;
   flex-direction: column;
   width: calc(100vw - 17rem);
   min-width: 860px;
-  max-width: calc(1400px - 17rem);
+  max-width: calc(1680px - 17rem);
 
   &__browser-chrome {
     background-color: #fff;
@@ -60,9 +60,9 @@ $image-max-size: 1024;
     height: 100%;
     display: flex;
     flex: 1 100%;
-    height: calc((100vw - 17rem) / 2);
+    height: calc((100vw - 16rem) / 2);
     min-height: 480px;
-    max-height: calc((1400px - 17rem) / 1.8);
+    max-height: calc((1680px - 16rem) / 1.8);
   }
 
   iframe {
